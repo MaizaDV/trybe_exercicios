@@ -1,0 +1,53 @@
+  Legenda :
+    === Códigos executados no terminal em cada questão ===
+    # número da questão resolvida
+    -- breve explicação
+
+# 1 -- Copiei e colei o link no diretório, criou um arquivo countries.txt.
+=== ctrl + shift + c
+=== ctrl + shift + v
+
+# 2 -- mostra todo o conteúdo do arquivo.
+=== cat countries.txt
+
+# 3 -- Abre o arquivo de forma páginada, procurei por Zambia.
+=== less countries.txt
+=== barra de espaço até encontrar a Zambia
+=== q -- para sair do terminal
+
+# 4 -- Abre o arquivo de forma páginada, utiliza outro comnado para encontrar Zambia.
+=== less countries.txt
+=== /Zambia
+=== q
+
+# 5 -- Busque por Brazil no countries.txt.
+=== grep "Brazil" countries.txt
+
+# 6 -- Busque por Brazil no countries.txt, com lower case.
+=== grep -i "Brazil" countries.txt
+
+=== touch phrases.txt
+
+# 7 -- Busca frases que não tem a palavra fox
+=== grep -iv "fox" phrases.txt
+
+# 8 -- Conta o número de palavras do arquivo.
+=== wc -w phrases.txt
+
+# 9 -- Conta o número de linhas do arquivo.
+=== wc -l phrases.txt
+
+# 10 -- Cria arquivos.
+=== touch empty.tbt empty.pdf
+
+# 11 -- Lista todos os arquivos do diretório.
+=== ls -l
+
+# 12 -- Lista arquivos que terminem com .txt.
+=== ls *.txt
+
+# 13 -- Lista arquivos que terminem com .txt ou .tbt.
+=== ls *t?t
+
+# 14 -- Acessa o manual do comando.
+=== man ls

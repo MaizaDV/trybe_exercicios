@@ -3,7 +3,7 @@
     # número da questão resolvida
     -- breve explicação
 
-# 1 -- Cria um diretória e navega ete ele.
+# 1 -- Cria um diretória e navega eté ele.
 === mkdir unix_tests
 === cd unix_tests
 
@@ -47,7 +47,7 @@
 $ 14 -- Mostra as 5 primeras skills.
 === head -5 skills.txt
 
-# 15 -- Mostra os 4 últimas skills.
+# 15 -- Mostra as 4 últimas skills.
 === tail -4 skills.txt
 
 # 16 -- Apaga arquivos no diretório, terminados em .txt

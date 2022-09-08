@@ -1,0 +1,54 @@
+        Legenda :
+    === Códigos executados no terminal em cada questão ===
+    # número da questão resolvida
+    -- breve explicação
+
+# 1 -- Cria um diretória e navega ete ele.
+=== mkdir unix_tests
+=== cd unix_tests
+
+# 2 -- Cria arquivo de texto trybe.txt.
+=== touch trybe.txt
+
+# 3 -- Faz cópia de arquivo.
+=== cp trybe.txt trybe_backup.txt
+
+# 4 -- Muda o nome do arquivo.
+=== mv trybe.txt trybe2.txt
+
+# 5 -- Novo diretória em unix_tests.
+=== mkdir backup
+
+# 6 -- Move arquivo para outro diretório.
+=== mv trybe_backup.txt backup/
+
+# 7 -- Novo diretória em unix_tests.
+=== mkdir backup2
+
+# 8 -- Move arquivo de um diretório para outro.
+=== mv backup/trybe_backup.txt backup2
+
+# 9 -- Apaga a pasta.
+=== rmdir backup
+
+# 10 -- Renomeia a pasta backup2.
+=== mv backup2 backup
+
+# 11 -- Mostra o path atual e lista arquivos.
+=== pwd
+=== ls
+
+# 12 -- Forçar a apagar o diretório com -rf.
+=== rm -rf backup 
+
+# 13 -- limpa o terminal.
+=== crtl + l ou clear
+
+$ 14 -- Mostra as 5 primeras skills.
+=== head -5 skills.txt
+
+# 15 -- Mostra os 4 últimas skills.
+=== tail -4 skills.txt
+
+# 16 -- Apaga arquivos no diretório, terminados em .txt
+=== rm *.txt

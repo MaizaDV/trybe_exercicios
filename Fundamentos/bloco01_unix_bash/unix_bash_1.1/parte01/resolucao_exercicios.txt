@@ -3,7 +3,7 @@
     # número da questão resolvida
     -- breve explicação
 
-# 1 -- Cria um diretória e navega eté ele.
+# 1 -- Cria um diretório e navega eté ele.
 === mkdir unix_tests
 === cd unix_tests
 

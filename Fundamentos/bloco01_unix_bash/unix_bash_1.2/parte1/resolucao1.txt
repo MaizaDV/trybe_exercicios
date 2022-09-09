@@ -1,0 +1,55 @@
+   Legenda :
+    === Códigos executados no terminal em cada questão ===
+    # número da questão resolvida
+
+# 1.
+=== cd unix_tests
+
+# 2.
+=== cat > skills2.txt
+=== Internet
+=== Unix
+=== Bash
+=== ctrl + d
+
+# 3.
+=== cat >> skills2.txt
+=== C
+=== Java
+=== Python
+=== Shell
+=== CSS
+=== ctrl + d
+=== sort < skills2.txt
+
+# 4.
+=== wc -l skills2.txt 
+
+# 5.
+=== sort < skills2.txt | head -3 > top_skills.txt
+
+# 6.
+=== cat > phrases2.txt
+Viver não é esperar a tempestade passar, é aprender a dançar na chuva.
+Nenhuma noite é escura demais para aqueles que têm luz própria.
+Nunca deixe de lutar por medo de errar ou de se machucar. As feridas com o tempo se curam, mas as oportunidades não voltam.
+Você nunca sabe que resultados virão da sua ação. Mas se você não fizer nada, não existirão resultados.
+Seja a mudança que você quer ver no mundo.
+A child in London puts up a picture of a fox and says, "Oh, I saw a fox today."
+
+# 7.
+=== grep br phrases2.txt | wc -l 
+
+# 8.
+=== grep -iv "br" phrases2.txt | wc -l
+
+# 9.
+=== cat >> phrases2.txt
+=== Canadá
+=== França
+
+# 10.
+=== cat phrases2.txt countries.txt > bunch_of_things.txt
+
+# 11.
+=== sort bunch_of_things.txt > bunch_of_things_ordered.txt

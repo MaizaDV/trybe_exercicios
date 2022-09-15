@@ -1,0 +1,31 @@
+h1 {
+    font-family: sans-serif;
+  }
+  
+  p {
+    font-weight: 600;
+    font-size: 3em;
+  }
+
+  body {
+    font-size: 16px;
+  }
+  
+  #lista {
+    font-style: italic;
+    line-height: 20px;
+    text-align: center;
+    text-decoration: underline overline dashed rgb(40, 110, 18);
+  }
+
+  #back-yelow {
+    background-color: yellow;
+  }
+
+  #back-red {
+    background-color: red;
+  }
+
+  #back-brown {
+    background-color: brown;
+  }

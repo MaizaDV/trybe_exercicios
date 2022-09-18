@@ -20,6 +20,7 @@ div:nth-of-type(2) > h3 {
 div:nth-of-type(3) > h3 {
     color: green;
     font-family: fantasy, sans-serif;
+    font-size: x-large;
 }
 
 div:nth-of-type(4) > h3 {

@@ -1,0 +1,42 @@
+div:hover {
+    width: 20%;
+    border: 2px solid rgb(55, 174, 230);
+    border-radius: 8px;
+    padding: 5px;
+    text-align: center;
+    background-color: cornflowerblue;
+}
+
+div:nth-of-type(1) > h3 {
+    color: red;
+    font-family: monospace, sans-serif;
+}
+
+div:nth-of-type(2) > h3 {
+    color: orange;
+    font-family: cursive, sans-serif;
+}
+
+div:nth-of-type(3) > h3 {
+    color: green;
+    font-family: fantasy, sans-serif;
+    font-size: x-large;
+}
+
+div:nth-of-type(4) > h3 {
+    color: blue;
+    font-size: small;
+}
+
+div:nth-of-type(5) > h3 {
+    color: aqua;
+    font-style: oblique;
+}
+
+div:nth-of-type(odd) > h3 {
+    font-style: italic;
+}
+
+body {
+    background-color: antiquewhite;
+}

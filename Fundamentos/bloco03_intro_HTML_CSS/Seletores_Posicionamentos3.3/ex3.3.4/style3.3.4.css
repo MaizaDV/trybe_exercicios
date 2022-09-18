@@ -1,0 +1,6 @@
+div:hover {
+    width: 20%;
+    border: 2px solid rgb(55, 174, 230);
+    border-radius: 8px;
+    padding: 5px;
+}

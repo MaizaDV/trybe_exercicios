@@ -18,3 +18,20 @@ h1 em {
     font-size: 40px;
     border: 1px solid black;
 }
+
+li {
+    font-size: 20px;
+}
+
+li em {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#linguagens li:not(:nth-child(n + 4)) {
+    color: blue;
+}
+
+.back_pink {
+    background-color: pink;
+}

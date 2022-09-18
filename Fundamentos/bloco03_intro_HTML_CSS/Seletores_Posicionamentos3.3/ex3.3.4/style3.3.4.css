@@ -32,3 +32,11 @@ div:nth-of-type(5) > h3 {
     color: aqua;
     font-style: oblique;
 }
+
+div:nth-of-type(odd) > h3 {
+    font-style: italic;
+}
+
+body {
+    background-color: antiquewhite;
+}

@@ -35,3 +35,32 @@ li em {
 .back_pink {
     background-color: pink;
 }
+
+.sites li a:hover {
+    font-weight: bold;
+}
+
+.sites li a[ href*="stackoverflow"] {
+    color: orangered;
+    font-family: inherit;
+}
+
+.sites li a[href*="w3schools"] {
+    color: green;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.sites li a[href*="mozilla"] {
+    color: black;
+    font-family: sans-serif;
+}
+
+.sites  li a[href*="devdocs"] {
+    color: rgb(196, 196, 22);
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial, sans-serif;
+}
+
+.sites li a[href*="trybe"] {
+    color: rgb(5, 92, 5);
+    font-family: "Inter","Arial",'"Helvetica Neue"',"Helvetica","sans-serif";
+}

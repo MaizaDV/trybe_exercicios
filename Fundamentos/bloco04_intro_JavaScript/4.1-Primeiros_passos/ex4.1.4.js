@@ -18,3 +18,15 @@ else if (currentHour >= 11 && currentHour <= 14) {
 else if (currentHour >= 4 && currentHour <= 11) {
     console.log(message += "Hmmm, cheiro de café recém-passado" )
 }
+
+
+// ||
+
+let weekDay = "quarta-feira";
+
+if (weekDay === "segunda-feira" || weekDay === "terça-feira" || weekDay === "quarta-feira" || weekDay === "quinta-feira" || weekDay === "sexta-feira" ) {
+    console.log("Oba, mais um dia de aprendizado na Trybe >:D")
+}
+else {
+    console.log("FINALMENTE, descanso merecido UwU")
+}

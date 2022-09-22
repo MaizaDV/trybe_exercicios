@@ -1,0 +1,1 @@
+const notaPessoa = 50;

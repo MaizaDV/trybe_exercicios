@@ -26,3 +26,13 @@ if (a > b && a > c) {
 } else {
     console.log("C é maior que A e B");
 }
+
+// 4
+let numero = 0;
+if (numero > 0) {
+    console.log("Positive");
+} else if (numero < 0) {
+    console.log("Negative");
+} else {
+    console.log("Zero");
+}

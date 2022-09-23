@@ -1,17 +1,17 @@
 let porcentagemNota = Math.floor(Math.random() * 100) + 1;
 
 if (porcentagemNota >= 90) {
-    console.log("A");
+    console.log(porcentagemNota + "% = A");
 } else if (porcentagemNota >= 80) {
-    console.log("B");
+    console.log(porcentagemNota + "% = B");
 } else if (porcentagemNota >= 70) {
-    console.log("C")
+    console.log(porcentagemNota + "% = C")
 } else if (porcentagemNota >= 60) {
-    console.log("D")
+    console.log(porcentagemNota + "% = D")
 } else if (porcentagemNota >= 50) {
-    console.log("E")
+    console.log(porcentagemNota + "% = E")
 } else if (porcentagemNota < 50) {
-    console.log("F")
+    console.log(porcentagemNota + "% = F")
 } else if (porcentagemNota < 0 || porcentagemNota > 100) {
     console.log("[ERRO!]")
 }

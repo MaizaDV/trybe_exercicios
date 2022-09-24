@@ -1,5 +1,6 @@
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let soma = contador = maiorValor = numeroImpar = 0;
+let menorValor = numbers[0]
 
 for (let i =0; i < numbers.length; i += 1) {
     soma += numbers[i];
@@ -11,6 +12,9 @@ for (let i =0; i < numbers.length; i += 1) {
         };
     } else if (numbers[i] >= maiorValor) {
         maiorValor = numbers[i];
+    } else if (numbers[i] <= menorValor) {
+        menorValor = numbers[i];
+        console.log("O menor valor encontrado: " + menorValor);
     };
 } if (soma/contador > 20) {
     console.log("Valor maior que 20.");
@@ -20,4 +24,5 @@ for (let i =0; i < numbers.length; i += 1) {
 console.log("Soma dos valores da array: " + soma);
 console.log("A média aritmética do array: " + soma / contador);
 console.log("Maior valor da array: " + maiorValor);
+console.log("O menor valor encontrado: " + menorValor);
 console.log("Existem " + numeroImpar + " números ímpares nessa array.");

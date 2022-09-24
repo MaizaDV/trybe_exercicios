@@ -26,3 +26,10 @@ console.log("A média aritmética do array: " + soma / contador);
 console.log("Maior valor da array: " + maiorValor);
 console.log("O menor valor encontrado: " + menorValor);
 console.log("Existem " + numeroImpar + " números ímpares nessa array.");
+
+let numeros= [];
+
+for (let i = 1; i <= 25; i += 1) {
+    numeros.push(i);
+}
+console.log(numeros);

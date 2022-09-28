@@ -1,5 +1,5 @@
 
-function positeveOrNot(param) {
+function positiveOrNot(param) {
   if (param > 0) {
     return ("positive");
   } else if (param < 0) {
@@ -8,7 +8,7 @@ function positeveOrNot(param) {
     return ("zero");
   }
 };
-console.log(positeveOrNot(-5));
+console.log(positiveOrNot(-5));
 
 function triangleAnglesValidate(angA, angB, angC) {
   let sumOfAngles = angA + angB + angC;

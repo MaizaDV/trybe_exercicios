@@ -4,7 +4,7 @@ let info = {
     nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
   };
 console.log("Bem-Vinda, " + info.personagem);
-info.recorrente = "sim";
+info.recorrente = "sim"; // adiciona uma nova chave no objeto
 console.log(info);
 
 for ( let i in info) {

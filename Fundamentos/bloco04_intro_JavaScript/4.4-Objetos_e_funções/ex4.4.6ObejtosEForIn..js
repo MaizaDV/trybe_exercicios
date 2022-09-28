@@ -6,3 +6,7 @@ let info = {
 console.log("Bem-Vinda, " + info.personagem);
 info.recorrente = "sim";
 console.log(info);
+
+for ( let i in info) {
+  console.log(i);
+};

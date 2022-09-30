@@ -10,6 +10,11 @@
     <script>
       const paragraph = document.getElementById("paragraph");
       paragraph.style.color = "red";
+      let pegaTodasAsClasses = document.getElementsByClassName("parágrafo");
+      for (let i = 0; i < pegaTodasAsClasses.length; i += 1) {
+        console.log(pegaTodasAsClasses[i]); // retorna todas as classes dessa lista
+        pegaTodasAsClasses[i].innerText = "Texto aqui"; // modifica todos os valores dessa classe
+      }
     </script>
   </body>
 </html>

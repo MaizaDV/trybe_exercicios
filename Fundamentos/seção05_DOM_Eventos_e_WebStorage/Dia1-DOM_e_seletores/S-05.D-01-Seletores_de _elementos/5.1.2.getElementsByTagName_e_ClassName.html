@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 id="page-title">Título</h2>
+      <p id="paragraph" class="parágrafo">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">Subtítulo</h4>
+      <p id="second-paragraph" class="parágrafo">Segundo parágrafo!</p>
+    </header>
+    <script>
+      const paragraph = document.getElementById("paragraph");
+      paragraph.style.color = "red";
+
+      let pegaTodasAsClasses = document.getElementsByClassName("parágrafo");
+      for (let i = 0; i < pegaTodasAsClasses.length; i += 1) {
+        console.log(pegaTodasAsClasses[i]); // retorna todas as classes dessa lista
+        pegaTodasAsClasses[i].innerText = "Texto aqui"; // modifica todos os valores dessa classe
+      }
+
+      document.getElementsByClassName("parágrafo")[0].style.color = "blue";
+
+      document.getElementsByTagName("h4")[0].style.color = "red";
+    </script>
+  </body>
+</html>

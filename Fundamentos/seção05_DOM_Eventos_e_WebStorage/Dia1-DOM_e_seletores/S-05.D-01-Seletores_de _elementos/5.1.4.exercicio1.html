@@ -48,16 +48,23 @@
       };
       changeText();
 
-      function changeColor() {
+      function changeColor() {  // 2
         let squareYellow = document.getElementsByClassName("main-content")[0];
         squareYellow.style.background = "rgb(76,164,109)";
       };
       changeColor();
 
-      function changeColor() {
+      function changeColorRed() { // 3
         let centerRed = document.getElementsByClassName("center-content")[0];
         centerRed.style.background = "white";
       };
+      changeColorRed();
+
+      function changeTitle() {
+        let changeH1 = document.getElementsByClassName("title")[0];
+        changeH1.innerHTML = "Exercício 5.1 - JavaScript";
+      };
+      changeTitle();
 
       /*
       Aqui você vai modificar os elementos já existentes utilizando apenas as funções:

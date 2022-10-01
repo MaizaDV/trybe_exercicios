@@ -8,3 +8,8 @@ const divEmergencyTasks = document.querySelectorAll('.emergency-tasks h3');
 for (let i = 0; i < divEmergencyTasks.length; i += 1) {
   divEmergencyTasks[i].style.backgroundColor = "rgb(165, 0, 243)"
 };
+
+const divNoEmergencyTasks = document.querySelectorAll('.no-emergency-tasks h3');
+for (let i = 0; i < divNoEmergencyTasks.length; i += 1) {
+  divNoEmergencyTasks[i].style.backgroundColor = "rgba(35,37,36,255)"
+};

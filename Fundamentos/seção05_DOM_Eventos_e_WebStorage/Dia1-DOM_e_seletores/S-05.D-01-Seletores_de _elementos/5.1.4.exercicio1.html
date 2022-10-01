@@ -60,20 +60,26 @@
       };
       changeColorRed();
 
-      function changeTitle() {
+      function changeTitle() {  // 4
         let changeH1 = document.getElementsByClassName("title")[0];
         changeH1.innerHTML = "Exercício 5.1 - JavaScript";
       };
       changeTitle();
 
-      function changeP0() {
+      function changeP0() { // 5
         let p0 = document.getElementsByTagName('p')[0];
         p0.innerHTML = p0.innerHTML.toUpperCase();
       };
       changeP0();
 
+      function ps() {
+        let callPs = document.getElementsByTagName("p");
+        for (let i = 0; i < callPs.length; i += 1) {
+        console.log(callPs[i].innerHTML);
+        };
+      };
+      ps();
 
-      
       /*
       Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
       - document.getElementById()

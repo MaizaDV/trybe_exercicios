@@ -69,7 +69,15 @@
       criaSection.className = "center-content"; // adiciona classe
       criaMain.appendChild(criaSection); // adiciona section como filho da main, aparece na página
 
-      console.log(criaSection);
+      const criaP = document.createElement("p");  // surge a tag p
+      criaP.innerText = "algum texto";  // adiciona texto na tag p
+      criaSection.appendChild(criaP); // adiciona tag p como filho do section, aparece na página
+
+      const criaSection2 = document.createElement("section"); // surge outra tag section
+      criaSection2.className = "left-content";  // adiciona classe
+      criaMain.appendChild(criaSection2); // adiciona section2 como filho da main, surge na página
+
+      console.log(criaP);
     </script>
   </body>
 </html>

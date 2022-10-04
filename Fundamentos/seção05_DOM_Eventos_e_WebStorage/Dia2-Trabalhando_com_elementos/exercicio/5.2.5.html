@@ -57,9 +57,15 @@
   </head>
   <body>
     <script>
-      const criaH1 = document.createElement('h1');
-      criaH1.innerText = 'Exercício - JavaScript DOM';
-      document.body.appendChild(criaH1); 
+      const criaH1 = document.createElement("h1");  // surge a tag h1
+      criaH1.innerText = "Exercício - JavaScript DOM";  // adiciona texto
+      document.body.appendChild(criaH1); // adiciona o h1 como filho do body, aparece na página html
+
+      const criaMain = document.createElement("main");  // surge a tag main
+      criaMain.className = "main-content";  // adiciona classe
+      document.body.appendChild(criaMain);  // adiciona main como filho do body, aparece na página
+      
+      console.log(criaMain);
     </script>
   </body>
 </html>

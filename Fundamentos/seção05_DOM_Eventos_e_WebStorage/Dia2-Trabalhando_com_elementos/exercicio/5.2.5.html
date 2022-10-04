@@ -64,8 +64,12 @@
       const criaMain = document.createElement("main");  // surge a tag main
       criaMain.className = "main-content";  // adiciona classe
       document.body.appendChild(criaMain);  // adiciona main como filho do body, aparece na página
-      
-      console.log(criaMain);
+
+      const criaSection = document.createElement("section"); // surge a tag section 
+      criaSection.className = "center-content"; // adiciona classe
+      criaMain.appendChild(criaSection); // adiciona section como filho da main, aparece na página
+
+      console.log(criaSection);
     </script>
   </body>
 </html>

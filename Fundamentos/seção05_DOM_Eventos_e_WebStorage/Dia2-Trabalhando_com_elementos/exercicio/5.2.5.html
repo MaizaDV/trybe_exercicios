@@ -86,7 +86,16 @@
       criaImg.src = 'https://picsum.photos/200';  // adiciona o source
       criaSectionLeft.appendChild(criaImg); // adiciona imagem como filho da sectionLeft
 
-      // console.log(criaP);
+      const listaUl = document.createElement('ul');
+      criaSectionRight.appendChild(listaUl);
+      const arrayNumbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis',
+        'Sete', 'Oito', 'Nove', 'Dez']
+      for (let num in arrayNumbers) {
+        const elementLi = document.createElement('li');
+        elementLi.innerHTML = arrayNumbers[num];
+        listaUl.appendChild(elementLi);
+      }
+
     </script>
   </body>
 </html>

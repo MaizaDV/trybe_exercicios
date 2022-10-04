@@ -73,11 +73,15 @@
       criaP.innerText = "algum texto";  // adiciona texto na tag p
       criaSection.appendChild(criaP); // adiciona tag p como filho do section, aparece na página
 
-      const criaSection2 = document.createElement("section"); // surge outra tag section
-      criaSection2.className = "left-content";  // adiciona classe
-      criaMain.appendChild(criaSection2); // adiciona section2 como filho da main, surge na página
+      const criaSectionLeft = document.createElement("section"); // surge outra tag section
+      criaSectionLeft.className = "left-content";  // adiciona classe
+      criaMain.appendChild(criaSectionLeft); // adiciona sectionLeft como filho da main, surge na página
 
-      console.log(criaP);
+      const criaSectionRight = document.createElement("section"); // surge outra tag section
+      criaSectionRight.className = "right-content";  // adiciona classe
+      criaMain.appendChild(criaSectionRight); // adiciona sectionRight como filho da main, surge na página
+
+      // console.log(criaP);
     </script>
   </body>
 </html>

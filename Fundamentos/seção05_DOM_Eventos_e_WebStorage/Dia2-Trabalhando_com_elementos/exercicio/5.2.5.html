@@ -81,7 +81,10 @@
       criaSectionRight.className = "right-content";  // adiciona classe
       criaMain.appendChild(criaSectionRight); // adiciona sectionRight como filho da main, surge na página
 
-      
+      const criaImg = document.createElement('img');  // surge imagem
+      criaImg.className = "small-image";  // adiciona classe
+      criaImg.src = 'https://picsum.photos/200';  // adiciona o source
+      criaSectionLeft.appendChild(criaImg); // adiciona imagem como filho da sectionLeft
 
       // console.log(criaP);
     </script>

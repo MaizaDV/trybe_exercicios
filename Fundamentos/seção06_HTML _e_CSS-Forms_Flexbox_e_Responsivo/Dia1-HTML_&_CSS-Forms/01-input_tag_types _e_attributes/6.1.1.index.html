@@ -1,12 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>criando uma tela de login</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>criando uma tela de login</title>
 </head>
+<style>
+body{
+    background: rgb(70, 170, 236);
+}
+
+header{
+color: white;
+text-align: center;
+}
+
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.466);
+}
+</style>
 <body>
-  
+    <header>
+        <h1>Para fixar - tela de Login</h1>
+    </header>
+    <section id="formulario">
+      <form action="" method="get">
+        <label for="eMail">Email:
+          <input type="email" name="email" id="eMail" placeholder="Digite seu email" required autocomplete="off" autofocus>
+        </label>
+        <br>
+        <label for="passWord">Senha:
+          <input type="password" name="password" id="passWord" placeholder="Digite sua senha" required>
+          <br>
+          <br>
+          <input type="checkbox" name="remind-me" id="remindMe"> Lembre-me
+          <br>
+          <br>
+          <input type="submit" value="Entrar">
+        </label>
+        </form>
+    </section>
 </body>
 </html>

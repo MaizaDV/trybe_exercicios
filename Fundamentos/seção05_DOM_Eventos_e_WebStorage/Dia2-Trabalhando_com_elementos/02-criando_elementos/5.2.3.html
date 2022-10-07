@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criando elementos</title>
+</head>
+<body>
+  <main id="paiDoPai">
+    <section id="pai">
+      <section id="primeiroFilho"></section>
+      <section id="elementoOndeVoceEsta">
+        <section id="primeiroFilhoDoFilho"></section>
+        <section id="segundoEUltimoFilhoDoFilho"></section>
+      </section>
+      Atenção!
+      <section id="terceiroFilho"></section>
+      <section id="quartoEUltimoFilho"></section>
+    </section>
+  </main>
+  <script>
+    const pai = document.getElementById('pai');
+    console.log(pai, "Recupere o elemento com o id pai");
+
+    const irmaoElementoOndeVoceEsta = document.createElement('section'); // Crie um novo elemento
+    irmaoElementoOndeVoceEsta.id = 'irmaoElementoOndeVoceEsta';
+    pai.appendChild(irmaoElementoOndeVoceEsta); console.log("Adicione o elemento criado como filho do elemento com o id `pai`");
+
+    const elementoOndeVoceEsta = document.getElementById('elementoOndeVoceEsta'); // Recupere o elemento com o id elementoOndeVoceEsta
+    const filhoElementoOndeVoceEsta = document.createElement('section'); // Crie um novo elemento 
+    filhoElementoOndeVoceEsta.id = 'filhoElementoOndeVoceEsta';
+    elementoOndeVoceEsta.appendChild(filhoElementoOndeVoceEsta); // Adicione o elemento criado como filho do elemento `elementoOndeVoceEsta`
+
+    const primeiroFilhoDoFilho = document.getElementById('primeiroFilhoDoFilho'); // Recupere o elemento com o id `primeiroFilhoDoFilho`
+    const filhoPrimeiroFilhoDoFilho = document.createElement('section'); // Crie um novo elemento 
+    filhoPrimeiroFilhoDoFilho.id = 'filhoPrimeiroFilhoDoFilho';
+    primeiroFilhoDoFilho.appendChild(filhoPrimeiroFilhoDoFilho); // Adicione o elemento criado como filho do elemento `primeiroFilhoDoFilho` 
+
+    const terceiroFilho = filhoPrimeiroFilhoDoFilho
+      .parentElement // primeiroFilhoDoFilho
+      .parentElement // elementoOndeVoceEsta
+      .nextElementSibling; // terceiroFilho
+    console.log(terceiroFilho);
+
+  </script>
+</body>
+</html>

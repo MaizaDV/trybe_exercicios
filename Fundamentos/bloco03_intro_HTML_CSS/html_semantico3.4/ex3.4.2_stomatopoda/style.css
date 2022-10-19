@@ -20,3 +20,40 @@ nav ul li {
     margin-inline-start: 5%;
     margin-inline-end: 5%;
 }
+
+table {
+    margin: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table td {
+    border: 1px solid black;
+    padding: 5px;
+}
+table th {
+    padding: 5px;
+    text-align: center;
+    margin: auto;
+}
+
+aside {
+    float: right;
+    margin: 0px;
+    padding: 5px;
+    text-align: center;
+    width: 30%;
+}
+
+img {
+    display: block;
+    width: 50%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(44, 218, 160);
+    margin: 0px;
+    padding: 5px;
+}

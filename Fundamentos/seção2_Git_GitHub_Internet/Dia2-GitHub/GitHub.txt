@@ -1,0 +1,56 @@
+        === GitHub ===
+    O GitHub é uma plataforma de hospedagem de código que trabalha com os comandos do Git para fazer o
+versionamento dos seus projetos. Dessa maneira, ele conecta o seu repositório local com o repositório remoto ou vice-versa.
+    Ele possibilita que você salve e gerencie arquivos de código de forma remota, além de possibilitar que você acesse o código
+de outras pessoas e que essas pessoas acessem o seu código. Tudo isso é feito utilizando o Git como sistema de versionamento.
+
+=== O Git é um sistema de versionamento de código e o GitHub é uma plataforma que hospeda esse código. Para poder enviar ou acessar
+ informações na plataforma do GitHub são utilizados os comandos do Git. ===
+
+    O controle de versão possibilita que você tenha versões do seu projeto que sejam acessíveis para outras pessoas que estão
+trabalhando junto com você.
+
+    É necessário estabelecer uma ponte entre o Git (local) e o GitHub (remoto), ou seja, você precisa ter uma conexão entre o
+repositório que está no seu computador e esse mesmo repositório que está remoto.
+
+=== Existem duas formas pelas quais você pode acessar o GitHub pelo terminal: HTTPS (Hypertext Transfer Protocol Secure) e SSH
+(Secure Shell). Ambas as formas são válidas, mas possuem algumas diferenças entre si:
+
+-- SSH ou Secure Shell: é um protocolo de criptografia de rede que serve para transferir dados de forma segura mesmo em redes
+inseguras. Usando o protocolo SSH, você pode se conectar ao GitHub sem precisar digitar seu nome e chave de acesso pessoal a cada comando executado.
+-- HTTPS ou Hypertext Transfer Protocol Secure: é uma extensão do protocolo de internet HTTP, que resumidamente é um protocolo de comunicação entre 
+sistemas, que utiliza certificados digitais para autenticar os dados e permitir que eles sejam criptografados de forma segura.
+
+=== O Two Factor Authentication ou 2FA (autenticação de dois fatores) é um processo de autenticação que combina dois ou mais fatores.
+
+=== Ao criar ou clonar um repositório no GitHub e deixá-lo acessível no computador, não é necessário a utilização do comando git init.
+
+=== Para clonar (baixar) um repositório no seu computador, você vai utilizar o comando git clone url-do-repositorio.
+Esse comando faz com que o repositório que está remoto, fique acessível localmente e o melhor de tudo é que ele já é versionado
+
+Para conseguir que as alterações que você tenha feito no seu projeto fiquem acessíveis remotamente, é necessário enviar essas modificações para o repositório remoto.
+Para isso:
+Abra o terminal no VSCode;
+Adicione o título # Meu repositório de exercícios no README.md do seu repositório trybe-exercicios;
+Utilize os comandos git add . e git commit -m "Mensagem";
+Digite o comando git push -u origin main.
+
+== O comando git push -u origin main vai enviar as suas alterações diretamente na branch main do seu repositório.
+O -u é uma sintaxe mais curta para --set-upstream.
+
+=== O GitHub utiliza o Pull Request para que você possa solicitar o merge de uma branch em outra branch, podendo ou não ser na branch main, 
+o que vai depender da sua necessidade.
+=== O Pull Request é uma solicitação para realizar o merge entre duas branches.
+
+=== Utilize o comando git pull -u origin main: esse comando vai trazer as informações da branch main remota para a 
+sua branch main local.
+
+=== O fluxo básico após git clone é:
+    Criar sua branch dentro do repositório clonado;
+    Fazer checkout na sua branch;
+    Criar seu primeiro commit;
+    Executar o famoso push.
+
+=== O comando git fetch verifica se há diferenças entre a sua _branch_ local atual com a mesma _branch_ no repositório remoto.
+=== A sequência de comandos git add arquivo && git commit -m "_mensagem_" adiciona um arquivo em específico ao _stage_ e salva 
+as mudanças com uma mensagem.

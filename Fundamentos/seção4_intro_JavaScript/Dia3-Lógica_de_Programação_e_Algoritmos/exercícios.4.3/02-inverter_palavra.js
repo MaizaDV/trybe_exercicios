@@ -1,5 +1,4 @@
 
-
 let word = 'eita';
 let reverseWord = "";
 

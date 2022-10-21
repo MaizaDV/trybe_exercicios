@@ -7,5 +7,5 @@ function maiorPalavra(palavras) {
     }
     return maiorPalavra;
   }
-  
-  console.log(maiorPalavra(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'])); //Fernanda
+
+console.log(maiorPalavra(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'])); //Fernanda

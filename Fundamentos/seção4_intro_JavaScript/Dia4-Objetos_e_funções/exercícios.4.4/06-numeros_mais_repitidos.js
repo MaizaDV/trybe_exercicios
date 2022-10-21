@@ -25,4 +25,4 @@ function maisRepetido(numeros) {
   return numeros[indexNumeroRepetido];
 }
 
-console.log(maisRepetido([2, 3, 5, 8, 8, 8,  3])); // 2
+console.log(maisRepetido([2, 3, 5, 8, 8, 8, 3])); // 2

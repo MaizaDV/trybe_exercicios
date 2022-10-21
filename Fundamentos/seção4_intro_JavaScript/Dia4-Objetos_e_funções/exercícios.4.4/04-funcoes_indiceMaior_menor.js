@@ -5,11 +5,9 @@ function indiceDoMaior(numeros) {
         indiceMaior = indice;
       }
     }
-  
     return indiceMaior;
   }
-  
-  console.log(indiceDoMaior([2, 3, 6, 7, 10, 1])); //4
+console.log(indiceDoMaior([2, 3, 6, 7, 10, 1])); //4
 
   function indiceDoMenor(numeros) {
     let indiceMenor = 0;
@@ -18,8 +16,7 @@ function indiceDoMaior(numeros) {
         indiceMenor = indice;
       }
     }
-  
     return indiceMenor;
   }
-  
-  console.log(indiceDoMenor([2, 4, 6, 7, 10, 0, -3])); //4
+
+console.log(indiceDoMenor([2, 4, 6, 7, 10, 0, -3])); //4

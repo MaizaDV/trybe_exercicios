@@ -9,6 +9,7 @@ console.log(sumVariable, sum); //  saída=> [Function: sum] sem usar ()
 console.log(sumVariable(2, 2), sum(2, 3)); // saída=>  [4, 5] usando () e atribuindo parâmetros
 
 //? exemplo 2 - arrow function simplificando o exemplo 1
+//? Quando utilizamos arrow functions, estamos justamente utilizando da capacidade do JavaScript de conseguir armazenar a função dentro de uma variável
 const sum2 = (number1, number2) => {
   return number1 + number2;
 };

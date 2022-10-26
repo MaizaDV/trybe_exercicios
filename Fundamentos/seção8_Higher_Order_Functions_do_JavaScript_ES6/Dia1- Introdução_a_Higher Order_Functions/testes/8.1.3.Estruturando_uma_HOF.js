@@ -23,9 +23,9 @@ repeat2(3, (number) => {
 
 
 //?exemplo 3 - A função recebida como argumento pela HOF, também é conhecida por callback. No exemplo 3, repeat é uma HOF que recebe isEven ou isOdd como função callback.
-const repeat3 = (number, action) => {
+const repeat3 = (number, verify) => {
   for (let count = 0; count <= number; count += 1) {
-    action(count);
+    verify(count);
   }
 };
 

@@ -16,18 +16,19 @@ const newEmployees = (name) => {
 console.log(newEmployees(employee('Pedro Guerra')).id1);
 console.log(newEmployees(employee('Luiza Drumond')).id2);
 console.log(newEmployees(employee('Carla Paiva')).id3);
+console.log('--------------------------------------------');
 
-// //? outro modo de fazer!
-// const employeeGenerator = (fullName) => {
-//   const email = fullName.toLowerCase().split(' ').join('_');
-//   return { fullName, email: `${email}@trybe.com` };
-// };
-// const newEmployees = (callback) => {
-//   const employees = {
-//     id1: callback('Pedro Guerra'),
-//     id2: callback('Luiza Drumond'),
-//     id3: callback('Carla Paiva'),
-//   };
-//   return employees;
-// };
-// console.log(newEmployees(employeeGenerator)); // retorna um objeto com uma lista de objetos
+//? outro modo de fazer!
+const employeeGenerator = (fullName) => {
+  const email = fullName.toLowerCase().split(' ').join('_');
+  return { fullName, email: `${email}@trybe.com` };
+};
+const newEmployees2 = (callback) => {
+  const employees = {
+    id1: callback('Pedro Guerra'),
+    id2: callback('Luiza Drumond'),
+    id3: callback('Carla Paiva'),
+  };
+  return employees;
+};
+console.log(newEmployees2(employeeGenerator)); // retorna um objeto com uma lista de objetos

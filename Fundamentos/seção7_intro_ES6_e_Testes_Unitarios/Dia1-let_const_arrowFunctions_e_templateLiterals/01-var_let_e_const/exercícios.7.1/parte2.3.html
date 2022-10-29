@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contador de cliques</title>
+</head>
+<style>
+body {
+  background: rgb(70, 170, 236);
+  font: normal 15pt Arial;
+}
+
+header {
+  color: white;
+  text-align: center;
+}
+
+section {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  width: 500px;
+  margin: auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.466);
+}
+</style>
+<body>
+  <header><h1>Aperte no botão para iniciar a contagem!</h1></header>
+  <main>
+    <section>
+    <button id="btnClick">click aqui!</button>
+    <p id="clickCount">0</p>
+  </section>
+  </main>
+</body>
+<script>
+  const buttonClick = document.querySelector('#btnClick');
+  const cont = document.querySelector('#clickCount');
+  buttonClick.addEventListener('click', () => {
+    cont.innerText = parseInt(clickCount.innerText) + 1;
+  });
+</script>
+</html>

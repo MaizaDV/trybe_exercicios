@@ -1,0 +1,46 @@
+            === HTML ===
+    Hyper Text Markup Language, é uma linguagem de marcação de texto.
+    
+    === não é linguagem de programação ===
+    Você pode pensar no HTML como se fosse o esqueleto da sua página. É através do HTML que você irá criar a
+estrutura de como a página vai ser exibida, definindo quais tags servirão para títulos, subtítulos, parágrafos,
+e outros conteúdos ricos como links, imagens, vídeos etc.
+
+
+        === estrutura básica de uma tag ===
+
+    <nometag tributo="valor">
+        conteúdo da tag
+    </nometag>
+-Passando essa estrutura para volores reais de um parágrafo fica assim:
+
+    <p id="texto">
+        Olá mundo
+    </p>
+
+
+=== estrutura básica de um HTML ===
+
+<!DOCTYPE html> --é uma informação para garantir que o navegar entenda que é um documento html
+<html lang="pt-br"> </html> --basicamente a raíz da página html, lang-é a definição e linguagem
+    <head>  --ele tem as configurações da página, qual caminho para o CSS ou script etc, são os dados da página
+        <meta charset="UTF-8">  --conjunto de caracteres utilizado na página
+        <title> </title>   --título da página, fica na barra somente
+    </head>
+    <body> --corpo da página, nela são as tags vísiveis de uma página
+        <h1> </h1> --título máximo da página, criam seções na página, headings, criam seções na página
+        <h2> </h2> --título com importancia um pouco menor, como um subtitulo
+        <p> </p> --parágrafo
+        <br> --usado dentro do parágrafo, serve como quebra de linha, pode ser repitida várias vezes
+        <strong> </strong> --negrito
+        <em> </em> --parece italico
+        <ul> </ul> --lista não ordenada
+        <ol> </ol> --lista não ordenada
+        <li> </li> --item da lista
+        <img src="caminho-da-imagem" alt="descrição-de-imagem" width="tamnho-da-imagem-px">
+        <a href="link-para-a-tag(referência)" target="_blank"--redireciona para uma nova aba>nome de algo</a>
+         
+          == navegação interna ==
+        <nomeDaTag><a href="#nome">nomeDeAlgo</a></nomeDaTag>
+        <nomeDaTag id="nome"> </nomeDaTag>
+    </body>

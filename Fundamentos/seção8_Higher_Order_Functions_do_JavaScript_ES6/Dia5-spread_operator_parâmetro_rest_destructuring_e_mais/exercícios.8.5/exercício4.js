@@ -1,3 +1,5 @@
+//? retorne todas as pessoas australianas que nasceram no século 20:
+
 const people = [
   {
     name: 'Nicole',

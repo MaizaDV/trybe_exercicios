@@ -5,5 +5,10 @@ const books = require('./books')
 //* const expectedResult = false;
 
 function authorUnique() {
-  // escreva seu código aqui
+  return books.every((bookEvery) =>
+    !books.some((bookSome) =>
+      (bookSome.author.birthYear === bookEvery.author.birthYear)
+      && (bookSome.author.name !== bookEvery.author.name)));
 }
+
+console.log(authorUnique());

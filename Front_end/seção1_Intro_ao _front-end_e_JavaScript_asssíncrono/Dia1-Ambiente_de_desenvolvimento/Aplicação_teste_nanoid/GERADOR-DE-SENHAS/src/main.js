@@ -1,4 +1,5 @@
 import { nanoid } from 'nanoid';
+import './style.css';
 
 const passwordBtnEl = document.querySelector('button');
 

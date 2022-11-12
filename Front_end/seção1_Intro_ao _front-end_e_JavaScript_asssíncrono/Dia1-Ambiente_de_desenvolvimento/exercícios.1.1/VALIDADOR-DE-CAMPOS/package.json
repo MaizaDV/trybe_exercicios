@@ -1,0 +1,16 @@
+{
+  "name": "validador-de-campos",
+  "version": "1.0.0",
+  "description": "exercício dia 1, sessão 1, Front-end. Validador de senha.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite --open"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "validator": "^13.7.0",
+    "vite": "^3.2.3"
+  },
+  "type": "module"
+}

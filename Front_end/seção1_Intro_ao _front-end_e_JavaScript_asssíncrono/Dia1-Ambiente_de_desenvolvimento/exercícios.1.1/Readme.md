@@ -8,7 +8,7 @@
 
 -- Estruturar uma página HTML com um formulário;
 
--- O formulário possui: campo para inserir o texto a ser validado, um dropdown para selecionar qual a validação deve ser feita, um botão para executar a validação e um texto que informe se o valor é válido ou não;
+-- O formulário possuir: campo para inserir o texto a ser validado, um dropdown para selecionar qual a validação deve ser feita, um botão para executar a validação e um texto que informe se o valor é válido ou não;
 
 -- Ter, pelo menos, cinco validações utilizando a biblioteca validator;
 

@@ -9,8 +9,26 @@
 <body>
   <header><h1>Validador de Campos</h1></header>
   <main>
-    <form> ...
-    </form>
+    <section class="container">
+      <h1>Validador de campos</h1>
+        <form>
+          <span>Escolha a opção e clique em validar</span>
+          <br>
+          <input type="text" placeholder="Insira aqui o valor" id="text">
+    
+          <select name="select" id="options">
+            <option value="cpf">CPF</option>
+            <option value="rgb">Cor rgb ou rgba</option>
+            <option value="email">email</option>
+            <option value="url">url</option>
+            <option value="date">Data</option>
+            <option value="float">Float</option>
+          </select>
+
+          <button id="btn">Validar</button>
+        </form>
+      <p id="result">Aqui vai o resultado...</p>
+  </section>
   </main>
   <script src="/src/main.js" type="module"></script>
 </body>

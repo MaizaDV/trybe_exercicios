@@ -1,0 +1,18 @@
+{
+  "name": "validador-de-campos",
+  "version": "1.0.0",
+  "description": "exercício dia 1, sessão 1, Front-end. Validador de senha.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite --open",
+    "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json . --ext .js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eslint-config-trybe-frontend": "^1.3.1",
+    "validator": "^13.7.0",
+    "vite": "^3.2.3"
+  },
+  "type": "module"
+}

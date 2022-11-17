@@ -1,4 +1,4 @@
-//! fazer testes no console do navegador, não pelo navegador
+//! fazer testes no console do navegador, não pelo code runner
 
 //? função que gera um número aleatório
 const generateRandomNumber = () => Math.round(Math.random() * 10);

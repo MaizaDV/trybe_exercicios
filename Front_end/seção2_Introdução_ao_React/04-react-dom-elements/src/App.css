@@ -41,4 +41,11 @@
 .App {
   background-color: #282c34;
   text-align: center;
+  color: white;
+}
+
+.HelloWorld {
+  background-color: gray;
+  color: blue;
+  font-weight: 700;
 }

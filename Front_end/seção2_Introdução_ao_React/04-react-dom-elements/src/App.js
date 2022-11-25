@@ -27,11 +27,17 @@
 // App.js
 import React from 'react';
 import './App.css';
+import HelloWorld  from './HelloWorld';
 
 function App() {
   return (
     <div className='App'>
       <h1>APP</h1>
+      {/* exemplo de className usado em CSS no React */}
+      <span className='HelloWorld'>Hello, World!</span>
+      <br/>
+      {/* Novo componente criado */}
+      <HelloWorld />
     </div>
   );
 }

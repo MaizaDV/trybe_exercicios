@@ -7,3 +7,5 @@ class ReactClass extends React.Component {
     )
   }
 }
+
+export default ReactClass;

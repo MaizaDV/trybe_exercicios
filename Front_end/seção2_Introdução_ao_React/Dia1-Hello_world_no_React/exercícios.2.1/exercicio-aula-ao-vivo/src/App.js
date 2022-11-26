@@ -15,20 +15,26 @@ const data = {
 
 // D E S A F I O
 
-// exibir todos os dados acima na tela (name, module, bornIn, watchedMovies)
-// exibir apenas os dados referentes aos filmes favoritados (favorite === true)
-// se o ano de nascimento for <= 2004 o nome da pessoa deve ficar verde, senão vermelho
+//* exibir todos os dados acima na tela (name, module, bornIn, watchedMovies)
+//* exibir apenas os dados referentes aos filmes favoritados (favorite === true)
+//todo se o ano de nascimento for <= 2004 o nome da pessoa deve ficar verde, senão vermelho
 
 class App extends React.Component {
   render() {
     const { name, module, bornIn, watchedMovies } = data;
-    console.log(watchedMovies.map(({title}) => title));
+    // console.log(watchedMovies.map(({title}) => title));
     return (
       <div>
         <p>Nome: {name}</p>
         <p>Módulo: {module}</p>
         <p>Nascimento: {bornIn}</p>
         <p>Filmes: {watchedMovies.map(({title}) => `${title}. `)}</p>
+        <ul>Filmes favoritos:
+          {/* não consegui fazer com outra hof, somente usando o map */}
+          {watchedMovies.map((element) => (
+            <li key={element.title}>{(element.favorite === true) ? element.title:null}</li>
+          ))}
+        </ul>
       </div>
     );
   }

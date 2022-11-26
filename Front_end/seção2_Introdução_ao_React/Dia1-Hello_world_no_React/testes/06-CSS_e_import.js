@@ -7,7 +7,7 @@ import { myImport } from 'file';
 
 // A origem do arquivo importado é indicada após o from, e pode ser um caminho relativo ou o nome da biblioteca que foi instalada no projeto:
 import React from 'react' // importando de uma biblioteca
-import Header from './components/Header.js' // importando de um caminho relativo
+import Header from './components/Header.js.js.js' // importando de um caminho relativo
 
 // A utilização de CSS (estilização) em componentes React não é nada muito diferente de como é feito no HTML, você deve criar um arquivo para manter todo o seu CSS e então deverá importá-lo onde você deseja utilizá-lo e colocar as classes e ids que você criou nos elementos da sua página.
 

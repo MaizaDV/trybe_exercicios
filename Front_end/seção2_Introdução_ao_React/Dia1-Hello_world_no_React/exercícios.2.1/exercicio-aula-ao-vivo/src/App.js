@@ -17,7 +17,7 @@ const data = {
 
 //* exibir todos os dados acima na tela (name, module, bornIn, watchedMovies)
 //* exibir apenas os dados referentes aos filmes favoritados (favorite === true)
-//todo se o ano de nascimento for <= 2004 o nome da pessoa deve ficar verde, senão vermelho
+//* se o ano de nascimento for <= 2004 o nome da pessoa deve ficar verde, senão vermelho
 
 class App extends React.Component {
   render() {
@@ -25,7 +25,7 @@ class App extends React.Component {
     // console.log(watchedMovies.map(({title}) => title));
     return (
       <div>
-        <p>Nome: {name}</p>
+        <p style={{ color: name <= 2004 ? 'green' : 'red' }}>Nome: {name}</p>
         <p>Módulo: {module}</p>
         <p>Nascimento: {bornIn}</p>
         <p>Filmes: {watchedMovies.map(({title}) => `${title}. `)}</p>

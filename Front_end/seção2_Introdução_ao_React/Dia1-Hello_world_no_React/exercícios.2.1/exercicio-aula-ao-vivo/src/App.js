@@ -21,11 +21,14 @@ const data = {
 
 class App extends React.Component {
   render() {
-    console.log('teste aqui 12312313');
+    const { name, module, bornIn, watchedMovies } = data;
+    console.log(watchedMovies.map(({title}) => title));
     return (
       <div>
-        <h1>Opa, alô Trybers</h1>
-        <p>Bora começar? Valendooooo ...</p>
+        <p>Nome: {name}</p>
+        <p>Módulo: {module}</p>
+        <p>Nascimento: {bornIn}</p>
+        <p>Filmes: {watchedMovies.map(({title}) => `${title}. `)}</p>
       </div>
     );
   }

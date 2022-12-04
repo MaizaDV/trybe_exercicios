@@ -32,7 +32,6 @@ MyComponent.propTypes = {
 };
 
 // um objeto default caso não seja passado nenhuma Props
-
 objeto.defaultProps = {
   name : 'nomePadrão',
   lastName: 'outroNomePadrão'

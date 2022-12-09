@@ -1,0 +1,26 @@
+body {
+  align-items: center;
+  background-color: #282c34;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  height: 100vh;
+  justify-content: center;
+}
+
+.app {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fancy-button {
+  border: 3px solid rgb(7, 227, 235);
+  border-radius: 20px;
+  cursor: pointer;
+  height: 50px;
+  margin: 15px;
+  width: 150px;
+}

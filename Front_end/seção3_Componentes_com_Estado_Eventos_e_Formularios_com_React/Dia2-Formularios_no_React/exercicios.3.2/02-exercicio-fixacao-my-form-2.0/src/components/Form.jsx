@@ -32,60 +32,76 @@ class Form extends Component {
       <div>
         <h1>Exercício de Fixação - Event handlers genéricos</h1>
         <form  className="form">
+          <fieldset className="form">
+          <legend>Informações pessoais</legend>
 
-          <label>
-            Escolha seu gênero de jogo favorito:
-            <select
-              name="generoFavorito"
-              value={ generoFavorito }
-              onChange={ this.handleChange }
-            >
-              <option value="rpg" >RPG</option>
-              <option value="fps" >FPS</option>
-              <option value="moba" >MOBA</option>
-              <option value="mmorpg" >MMORPG</option>
-            </select>
-          </label>
+            <label>
+              Nome
+              <input
+                name="nome"
+                type="text"
+                value={ nome }
+                onChange={ this.handleChange }
+              />
+            </label>
 
-          <label>
-            Nome
-            <input
-              name="nome"
-              type="text"
-              value={ nome }
-              onChange={ this.handleChange }
-            />
-          </label>
+            <label>
+              Email
+              <input
+                type="email"
+                name="email"
+                value={ email }
+                onChange={ this.handleChange }
+              />
+            </label>
+          </fieldset>
 
-          <label>
-            Email
-            <input
-              type="email"
-              name="email"
-              value={ email }
-              onChange={ this.handleChange }
-            />
-          </label>
+          <fieldset className="form">
+            <legend>Escolhas do usuário</legend>
+            <label>
+              Escolha seu gênero de jogo favorito:
+              <select
+                name="generoFavorito"
+                value={ generoFavorito }
+                onChange={ this.handleChange }
+              >
+                <option value="rpg" >RPG</option>
+                <option value="fps" >FPS</option>
+                <option value="moba" >MOBA</option>
+                <option value="mmorpg" >MMORPG</option>
+              </select>
+            </label>
 
-          <label>
-            Me diga seu jogo favorito! Você escolhe :)
-            <textarea
-              name="jogoFavorito"
-              value={ jogoFavorito }
-              onChange={ this.handleChange }
-            />
-          </label>
+            <label>
+              Me diga seu jogo favorito! Você escolhe :)
+              <textarea
+                name="jogoFavorito"
+                value={ jogoFavorito }
+                onChange={ this.handleChange }
+              />
+            </label>
 
-          <label>
-            Gosta de jogos?
-            <input
-              name="likedGames"
-              type="checkbox"
-              value={ likedGames }
-              onChange={ this.handleChange }
-            />
-          </label>
+            <label>
+              Gosta de jogos?
+              <input
+                name="likedGames"
+                type="checkbox"
+                value={ likedGames }
+                onChange={ this.handleChange }
+              />
+            </label>
+          </fieldset>
 
+          <fieldset className="form">
+            <legend>Arquivo</legend>
+            <label>
+              Adicione um arquivo:
+              <input
+                name="arquivo"
+                type="file"
+                />
+            </label>
+          </fieldset>
         </form>
       </div>
     );

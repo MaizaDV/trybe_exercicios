@@ -3,18 +3,42 @@ import '../App'
 
 class Form extends Component {
 
+  constructor() {
+    super();
+
+    this.handleTextAreaChange = this.handleTextAreaChange.bind(this)
+
+    this.state = {
+      estadoFavorito: '',
+      nome: '',
+      email: '',
+      idade: 0,
+      vaiComparecer: false,
+      palavraChaveFavorita: '',
+    }
+  }
+
+  handleTextAreaChange(event) {
+    this.setState({ estadoFavorito: event.target.value })
+  }
+
   render() {
     return (
-      <div className="form">
+      <div>
         <h1>Estados e React - Tecnologia fantástica ou reagindo a regionalismos?</h1>
-        <form>
+        <form  className="form">
+{/* componente controlado */}
           <label>
             Diga qual o seu Estado favorito! De React ou do Brasil, você quem sabe! =)
               <textarea
                 name="estadoFavorito"
+                value={ this.state.estadoFavorito }
+                onChange={ this.handleTextAreaChange }
               />
-          </label>
+          </label> 
+{/* componente controlado */}
 
+{/* componentes não controlados */}
           <label>
             Email
             <input name="email" type="email" />
@@ -49,9 +73,14 @@ class Form extends Component {
             <option value="hooks" >Hooks</option>
           </select>
         </label>
+{/* componentes não controlados */}
+
       </div>
     );
   }
 }
 
 export default Form;
+
+
+//  Estamos dizendo aqui que o elemento do formulário é um componente controlado. Ou seja, não estamos falando dos componentes React aqui, mas sim dos elementos que compõem o formulário! 

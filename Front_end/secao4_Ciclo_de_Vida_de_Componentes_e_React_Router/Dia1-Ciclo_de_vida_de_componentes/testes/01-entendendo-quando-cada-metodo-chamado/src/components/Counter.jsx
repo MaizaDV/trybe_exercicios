@@ -15,13 +15,15 @@ class Counter extends Component {
 
   shouldComponentUpdate(nextProps, nextState) {
     console.log("shouldComponentUpdate");
+    console.log("shouldComponentUpdate", this.state, nextState);
     return true;
   }
 
   componentDidUpdate(prevProps, prevState) {
     console.log("componentDidUpdate");
+    console.log("componentDidUpdate", this.state, prevState);
   }
-
+// estado só é de fato atualizado quando chega no método componentDidUpdate. Por isso, caso seja necessário impedir uma renderização, você deve utilizar o método shouldComponentUpdate, que permite comparar os atuais e próximos estados ou props e adicionar a lógica.
   render() {
     console.log("render");
     return (

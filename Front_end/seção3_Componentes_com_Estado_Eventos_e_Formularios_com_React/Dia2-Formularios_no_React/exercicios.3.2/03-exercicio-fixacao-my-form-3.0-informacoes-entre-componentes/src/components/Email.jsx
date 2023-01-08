@@ -20,7 +20,7 @@ class Email extends Component {
   }
 };
 
-Email.propTypes ={
+Email.propTypes = {
   value: PropTypes.string.isRequired,
   handleChange: PropTypes.func.isRequired,
 };

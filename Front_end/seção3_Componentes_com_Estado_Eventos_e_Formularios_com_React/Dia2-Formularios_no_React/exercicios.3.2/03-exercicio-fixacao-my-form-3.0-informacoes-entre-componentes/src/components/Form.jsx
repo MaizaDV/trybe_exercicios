@@ -20,7 +20,7 @@ class Form extends Component {
     }
   }
 
-    handleError() {
+    handleError = () => {
       const { nome, email, generoFavorito, jogoFavorito, likedGames } = this.state;
 
       // Criamos um array com os dados obrigatórios.

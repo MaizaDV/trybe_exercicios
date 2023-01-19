@@ -10,7 +10,27 @@ test('Verifica se existe um input do tipo email na tela', () => {
   // fazer os testes
   expect(inputEmail).toBeInTheDocument();
   expect(inputEmail.type).toBe("email");
+  expect(inputEmail).toHaveProperty('type', 'email');
 
+});
+
+test('Verifica se existe dois botões na tela', () => {
+  // acessar os elementos da tela
+  render(<App />);
+  const buttons = screen.getAllByRole("button");
+
+  // fazer os testes
+  expect(buttons).toHaveLength(2);;
+});
+
+test('Verifica se existe o botão de enviar', () => {
+  // acessar os elementos da tela
+  render(<App />);
+  const button = screen.getByTestId("id-send");
+
+  // fazer os testes
+  expect(button).toBeInTheDocument();
+  expect(button).toHaveValue("Enviar");;
 });
 
   // todos os testes seguem mais ou menos essas etapas:

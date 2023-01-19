@@ -30,7 +30,8 @@ test('Verifica se existe o botão de enviar', () => {
 
   // fazer os testes
   expect(button).toBeInTheDocument();
-  expect(button).toHaveValue("Enviar");;
+  expect(button).toHaveProperty("type", "button");
+  expect(button).toHaveValue("Enviar");
 });
 
   // todos os testes seguem mais ou menos essas etapas:

@@ -1,5 +1,6 @@
 import './App.css';
 import React, { Component } from 'react';
+import ValidEmail from './components/ValidEmail';
 
 class App extends Component {
   constructor(props) {
@@ -39,7 +40,8 @@ class App extends Component {
             onClick={ () => this.changeSaveEmail(email) }
           />
           <input id='btn-id' type='button' value='Voltar' />
-          <h2 data-testid='id-email-user'>{ `Valor: ${saveEmail}` }</h2>
+          {/* <h2 data-testid='id-email-user'>{ `Valor: ${saveEmail}` }</h2> */}
+          <ValidEmail email={ saveEmail } />
       </div>
     );
   }

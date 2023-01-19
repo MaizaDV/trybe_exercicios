@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import App from './App';
+import App from '../App';
 
 describe('Tela de inserção de email', () => {
   it('Verifica se existe um input do tipo email na tela', () => {

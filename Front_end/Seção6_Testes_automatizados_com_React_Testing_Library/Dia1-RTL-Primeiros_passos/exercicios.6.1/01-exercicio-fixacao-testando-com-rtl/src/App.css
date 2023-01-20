@@ -8,3 +8,11 @@ body {
   color: white;
   font-family: sans-serif;
 }
+
+.green-text {
+  color: green;
+}
+
+.red-text {
+  color: red;
+}

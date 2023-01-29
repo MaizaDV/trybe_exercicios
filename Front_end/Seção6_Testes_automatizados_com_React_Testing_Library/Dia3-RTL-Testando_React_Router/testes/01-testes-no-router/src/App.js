@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css'
 import { Switch, Route, Link } from 'react-router-dom';
 
 export const About = () => <h1>Você está na página Sobre</h1>;

@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "@redux-devtools/extension": "^3.2.5",
     "esbuild": "^0.16.17",
     "function-bind": "^1.1.1",
     "has": "^1.0.3",

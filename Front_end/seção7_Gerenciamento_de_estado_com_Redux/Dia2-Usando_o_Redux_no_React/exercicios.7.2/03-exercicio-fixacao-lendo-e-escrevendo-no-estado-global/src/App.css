@@ -1,0 +1,70 @@
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.App {
+  text-align: center;
+}
+
+img {
+  border: 2px solid black;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+
+.form-mutant {
+  width: 75vw;
+}
+
+h2 {
+  margin-bottom: 30px;
+  color: white;
+}
+
+.intro {
+  color: white;
+  font-size: large;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.mutant-card {
+  color: white;
+  background-color: black;
+  border-radius: 15px;
+  margin: auto;
+  padding: 10px;
+  width: 75%;
+}
+
+.mutant-input {
+  background-color: black;
+  border-radius: 15px;
+  margin: auto;
+  opacity: 0.95;
+  padding: 20px;
+}
+
+.omega-div {
+  height: 80%;
+  width: 100%;
+}
+
+.omega-background {
+  display: flex;
+  align-items: center;
+  background-image: url(https://content-assets.betrybe.com/prod/e66d4095-bb1b-44ec-a7fd-3c0118e5b80e-xmen-wallpaper.jpeg);
+  background-size: cover;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0.9;
+  height: 100vh;
+}
+
+select {
+  max-width: 200px;
+}

@@ -1,0 +1,39 @@
+.App {
+  text-align: center;
+}
+
+.matrix-background {
+  align-items: center;
+  background-image: url('https://content-assets.betrybe.com/prod/92881171-a5c8-4bb2-9f10-05ed823dd61e-matrix-background.png');
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  height: 100vh;
+  justify-content: center;
+  opacity: 0.9;
+}
+
+.matrix-main {
+  align-items: center;
+  background-color: black;
+  border-radius: 15px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  opacity: 0.9;
+  padding: 15px;
+  max-width: 60%;
+}
+
+.matrix-main img {
+  max-width: 200px;
+  max-height: 100px;
+}
+
+.pill {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+}

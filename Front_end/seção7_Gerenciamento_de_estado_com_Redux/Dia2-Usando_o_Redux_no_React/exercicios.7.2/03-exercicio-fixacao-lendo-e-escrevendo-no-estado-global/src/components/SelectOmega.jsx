@@ -14,14 +14,14 @@ class SelectOmega extends React.Component {
           <h2>Selecione o mutante nível Ômega</h2>
           <div>
             <select
-            // onChange={ Implemente o dispatch da action selectMutant }
+            onChange={ ({ target }) => dispatch(selectMutant( target.value )) }
             >
               <MutantOptions />
             </select>
             <div>
               <button
                 type="button"
-                // onClick={ Implemente o dispatch da action `showMutant` }
+                onClick={ () => dispatch((showMutant(true))) }
               >
                 Selecionar
               </button>
@@ -38,7 +38,7 @@ class SelectOmega extends React.Component {
 }
 
 const mapStateToProps = (state) => ({
-  // Implemente aqui de modo que a aplicação tenha acesso à chave `show` do estado global
+  show: state.show,
 });
 
 export default connect(mapStateToProps)(SelectOmega);

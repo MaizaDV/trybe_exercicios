@@ -1,5 +1,7 @@
 # Lendo e escrevendo no estado global
 
+<https://react-un8ufi.stackblitz.io/>
+
 Neste exercício, iremos implementar uma aplicação para buscar e exibir as informações de personagens do universo X-Men. Quando selecionado, o nome do X-men deve ser salvo no estado global. Dessa forma, qualquer componente poderá acessar a informação contendo o seu nome.
 
 Além disso, temos uma chave show no estado global que possui um valor booleano. O valor dessa chave irá definir qual componente deve ser renderizado. Essa aplicação está no contexto da série de revistas em quadrinhos X-men, porém essa estratégia é muito comum no desenvolvimento de aplicações e pode ser adotada em diversos contextos diferentes.

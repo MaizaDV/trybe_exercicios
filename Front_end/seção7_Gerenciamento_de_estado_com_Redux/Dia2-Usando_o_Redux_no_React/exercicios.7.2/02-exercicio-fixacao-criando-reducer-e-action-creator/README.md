@@ -6,6 +6,8 @@ Esta aplicação permite que você faça o mesmo, ou seja, escolher uma das píl
 
 ## O seu desafio nesse exercício será
 
+<https://react-wyysp6.stackblitz.io/>
+
 - Implementar o action creator, que se encontra no arquivo ./src/redux/actions/index.js;
 - Implementar o reducer, que se encontra no arquivo ./src/redux/reducers/pillChoice.js.
 

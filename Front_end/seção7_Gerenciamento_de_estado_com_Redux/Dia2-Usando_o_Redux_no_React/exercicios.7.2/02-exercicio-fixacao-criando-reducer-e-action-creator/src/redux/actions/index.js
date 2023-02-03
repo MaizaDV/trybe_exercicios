@@ -1,3 +1,7 @@
+const PILL_TAKEN = 'PILL_TAKEN';
+
 export const understandMatrix = (id) => ({
-  // implemente aqui
+  type: PILL_TAKEN,
+  id,
+
 });

@@ -1,0 +1,31 @@
+header {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  background-color: #034422;
+
+  color: #FFFFFF;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.icon {
+  width: 36px;
+  height: 26px;
+  background-color: #1DB702;
+  border-radius: 5px;
+  margin-right: 8px;
+  position: relative;
+}
+
+.icon::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  border: 8px solid transparent;
+  border-left-color: #FFFFFF;
+  position: absolute;
+  top: 5px;
+  left: 15px;
+}

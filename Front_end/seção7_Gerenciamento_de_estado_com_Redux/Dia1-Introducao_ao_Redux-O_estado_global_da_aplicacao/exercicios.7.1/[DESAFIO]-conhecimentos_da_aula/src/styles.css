@@ -1,0 +1,27 @@
+.app {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.app h1 {
+  font-size: 5rem;
+}
+
+.buttons button {
+  margin: 0 1rem;
+  padding: 0.8rem;
+  border: 1px solid rgb(84, 148, 20);
+  background-color: rgb(84, 148, 20);
+  cursor: pointer;
+  color: white;
+  border-radius: 0.2rem;
+}
+
+.buttons button:first-child {
+  background-color: crimson;
+  border-color: crimson;
+}

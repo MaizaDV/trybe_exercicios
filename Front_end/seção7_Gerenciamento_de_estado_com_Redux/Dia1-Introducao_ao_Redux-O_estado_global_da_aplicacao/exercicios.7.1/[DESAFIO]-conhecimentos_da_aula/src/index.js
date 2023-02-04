@@ -1,4 +1,5 @@
 const showCountValue = (counter) => {
+  // console.log(Object.values(counter));
   const h1Element = document.getElementById("counter");
   h1Element.innerText = Object.values(counter);
 };

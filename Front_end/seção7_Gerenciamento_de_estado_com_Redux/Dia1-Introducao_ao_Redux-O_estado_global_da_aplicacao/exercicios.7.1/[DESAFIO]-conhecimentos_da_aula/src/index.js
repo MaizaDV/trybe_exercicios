@@ -1,6 +1,6 @@
 const showCountValue = (counter) => {
   const h1Element = document.getElementById("counter");
-  h1Element.innerText = counter;
+  h1Element.innerText = Object.values(counter);
 };
 
 showCountValue(0);
@@ -11,16 +11,30 @@ const DECREMENTO = "DECREMENTO";
 // ========== ACTIONS ==========
 const actionIncremento = () => {
   // DISPARA A ACTION DE ADICIONAR + 1 AO COUNTER
+  const action = { type: INCREMENTO };
   //store.???
+  store.dispatch(action);
 };
 
 const actionDecremento = () => {
   // DISPARA A ACTION DE REMOVER - 1 AO COUNTER
+  const action = { type: DECREMENTO };
   //store.???
+  store.dispatch(action);
 };
 // ========== REDUCER ==========
-const initialState = "?";
-const reducer = (state = initialState, action) => {};
+const initialState = { counter: 0 };
+const reducer = (state = initialState, action) => {
+  switch (action.type) {
+    case INCREMENTO:
+      return { counter: state.counter + 1 };
+  
+    case DECREMENTO:
+      return { counter: state.counter - 1 }
+    default:
+      return state;
+  }
+};
 
 // ========== STORE ==========
 const store = Redux.createStore(reducer);

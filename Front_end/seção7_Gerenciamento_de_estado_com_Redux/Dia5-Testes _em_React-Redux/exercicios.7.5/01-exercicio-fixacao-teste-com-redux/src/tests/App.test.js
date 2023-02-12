@@ -18,17 +18,52 @@ describe('Verifica o clique dos botões', () => {
 
     const btn1 = screen.getByRole('button', {  name: /incrementa 1/i});
     expect(btn1).toBeInTheDocument();
+
     userEvent.click(btn1);
     expect(screen.getByRole('heading', {  name: /1/i})).toBeInTheDocument();
+
     userEvent.click(btn1);
     expect(screen.getByRole('heading', {  name: /2/i})).toBeInTheDocument();
 
     const btn2 = screen.getByRole('button', {  name: /incrementa 5/i});
     expect(btn2).toBeInTheDocument();
+
     userEvent.click(btn2);
     expect(screen.getByRole('heading', {  name: /7/i})).toBeInTheDocument();
+
     userEvent.click(btn2);
     expect(screen.getByRole('heading', {  name: /12/i})).toBeInTheDocument();
+
+  });
+
+  it('O valor inicial do estado global é { count = 5 }, verifica se os botões incrementam corretamente o valor do estado global.', () => {
+    const initialState = { counterReducer: { count: 5 }};
+    renderWithRedux(<App />, { initialState });
+
+    const buttons = screen.getAllByRole('button');
+    expect(buttons).toHaveLength(2);
+    expect(buttons.length).toBe(2);
+    
+    const valor = screen.getByRole('heading', {  name: /5/i});
+    expect(valor).toBeInTheDocument();
+
+    const btn1 = screen.getByRole('button', {  name: /incrementa 1/i});
+    expect(btn1).toBeInTheDocument();
+
+    userEvent.click(btn1);
+    expect(screen.getByRole('heading', {  name: /6/i})).toBeInTheDocument();
+
+    userEvent.click(btn1);
+    expect(screen.getByRole('heading', {  name: /7/i})).toBeInTheDocument();
+
+    const btn2 = screen.getByRole('button', {  name: /incrementa 5/i});
+    expect(btn2).toBeInTheDocument();
+
+    userEvent.click(btn2);
+    expect(screen.getByRole('heading', {  name: /12/i})).toBeInTheDocument();
+
+    userEvent.click(btn2);
+    expect(screen.getByRole('heading', {  name: /17/i})).toBeInTheDocument();
 
   });
 });

@@ -9,7 +9,7 @@ class App extends React.Component {
     return (
       <div className="container">
         <h1>Contador</h1>
-        <h2>{countState}</h2>
+        <h2>{ countState }</h2>
         <button onClick={() => dispatch(actionCreator())}>Incrementa 1</button>
         <button onClick={() => dispatch(actionCreator(5))}>Incrementa 5</button>
       </div>

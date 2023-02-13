@@ -8,7 +8,9 @@ const renderWithRedux = (
   component,
     {
       initialState,
-      store = createStore(combineReducers({ counterReducer }), initialState)
+      store = createStore(
+        combineReducers({ counterReducer }),
+        initialState)
     } = {}) => ({
   ...render(<Provider store={ store }>{ component }</Provider>),
   store, // função auxiliar retornando a store

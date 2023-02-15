@@ -1,0 +1,25 @@
+body {
+  align-items: center;
+  background-color: #282c34;
+  color: white;
+  display: flex;
+  font-family: sans-serif;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.App {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+}

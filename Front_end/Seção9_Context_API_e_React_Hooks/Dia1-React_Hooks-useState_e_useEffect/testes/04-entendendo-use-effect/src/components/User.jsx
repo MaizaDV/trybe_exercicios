@@ -1,5 +1,27 @@
-function User({name, age}) {
-  const newName = `${ name } da Silva.`
+import { useEffect, useState } from 'react';
+
+function User({ age }) {
+const [name, setName] = useState('');
+
+  useEffect(() => {
+    fetch('https://jsonplaceholder.typicode.com/users/1')
+      .then(response => response.json())
+      .then(data => {
+        setName(data.name);
+      })
+  }, []);
+
+  useEffect(() => {
+
+    const intervalId = setInterval(() => {
+      document.title = (new Date()).toLocaleTimeString();
+    }, 1000);
+
+    return () => {
+      clearInterval(intervalId);
+    }
+
+  }, []);
   
   function handleClick() {
     // Aqui eu posso colocar um efeito colateral,
@@ -8,7 +30,7 @@ function User({name, age}) {
   return (
     <section>
       <h1>Dados do usuário:</h1>
-      <h2>Nome: { newName }</h2>
+      <h2>Nome: { name }</h2>
       <h2>Idade: { age }</h2>
       <button
       type="button"

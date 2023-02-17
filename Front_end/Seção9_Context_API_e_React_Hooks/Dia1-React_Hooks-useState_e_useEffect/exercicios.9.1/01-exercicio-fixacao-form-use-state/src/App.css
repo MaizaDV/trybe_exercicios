@@ -8,3 +8,9 @@ body {
   height: 100vh;
   justify-content: center;
 }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+}

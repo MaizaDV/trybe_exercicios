@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import ThemeContext from '../context/ThemeContext';
 
 function Header() {
+  const theme = useContext(ThemeContext);
 
   return (
     <header>
       <h1>Trybe</h1>
-      <button onClick={() => {}}>
-      {/* {theme.color === 'dark' ? '☀️' : '🌒'} */}
+      <button onClick={() => theme.toggleTheme()}>
+      { theme.color === 'dark' ? '☀️' : '🌒' }
       </button>
     </header>
   );

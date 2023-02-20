@@ -7,14 +7,14 @@ import Image from './components/Image';
 import './App.css';
 
 export default function App() {
-  const [ themeColor, setThemeColor ] = useState('dark');
+  const [ themeColor, setThemeColor ] = useState('dark'); // estado gerenciando qual o tema ativo na aplicação
 
-  function toggleTheme() {
+  function toggleTheme() { // função que altera o thema da aplicação
     setThemeColor(themeColor === 'dark' ? 'ligth' : 'dark')
   };
 
   return (
-    <ThemeContext.Provider value={ { color: themeColor, toggleTheme } }>
+    <ThemeContext.Provider value={ { color: themeColor, toggleTheme } }>{/* Passa as informações que vai usar, pelo provider, para os componentes filhos */}
       <div className='app light'>
         <Header />
         <Image />

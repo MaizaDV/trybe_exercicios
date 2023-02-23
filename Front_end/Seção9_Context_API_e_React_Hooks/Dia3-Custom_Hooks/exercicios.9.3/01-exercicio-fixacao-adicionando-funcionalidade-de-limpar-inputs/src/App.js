@@ -22,7 +22,10 @@ function App() {
       }),
       'Success'
     );
-  }
+    firstName.functionClear();
+    lastName.functionClear();
+    email.functionClear();
+  };
 
   return (
     <div className="container">

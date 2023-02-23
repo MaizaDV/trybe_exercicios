@@ -7,9 +7,12 @@ function useFormInput(initialValue) {
     setValue(target.value);
   };
 
+  const clear = () => setValue('');
+
   return {
     value: value,
     onchange: handleChange,
+    functionClear: clear,
   };
 };
 

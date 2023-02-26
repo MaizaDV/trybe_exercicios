@@ -42,9 +42,9 @@
 === rm -rf backup 
 
 # 13 -- limpa o terminal.
-=== crtl + l ou clear
+=== ctrl + l ou clear
 
-$ 14 -- Mostra as 5 primeras skills.
+$ 14 -- Mostra as 5 primeiras skills.
 === head -5 skills.txt
 
 # 15 -- Mostra as 4 últimas skills.

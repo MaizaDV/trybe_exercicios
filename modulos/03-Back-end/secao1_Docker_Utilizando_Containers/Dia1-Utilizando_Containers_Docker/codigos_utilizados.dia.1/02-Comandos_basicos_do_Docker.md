@@ -43,6 +43,10 @@ OBS: Por padrão, o comando `docker ps` não exibe containers que foram parados 
  docker ps -a
   ```
 
+  ```bash
+ docker container ls -a
+  ```
+
 </details>
 
 <details>
@@ -54,11 +58,13 @@ Os parâmetros `<flags>?` e `<argumentos>?` são opcionais (o que é sinal
 
 O exemplo abaixo executa um container usando a imagem Docker `alpine` e a tag `3.14`:
 
-Comando:
+Exemplo de comando:
 
   ```bash
    docker container run alpine:3.14 echo "Hello World"
   ```
+
+Saída:
 
   ```bash
 pessoa@trybe:~/course$ docker container run alpine:3.14 echo "Hello World"
@@ -69,11 +75,15 @@ Unable to find image 'alpine:3.14' locally
 Digest: sha256:06b5d462c92fc39303e6363c65e074559f8d6b1363250027ed5053557e3398c5
 Status: Downloaded newer image for alpine:3.14
 Hello World!
+  ```
 
+Confirmação do comando executado usando `docker ps -a`:
+
+```bash
 pessoa@trybe:~/course$ docker ps -a
 CONTAINER ID   IMAGE         COMMAND                 CREATED          STATUS                      PORTS     NAMES
 52712fa829f0   alpine:3.14   "echo 'Hello World'"   19 seconds ago   Exited (0) 19 seconds ago             xenodochial_kapitsa
-  ```
+```
 
 </details>
 

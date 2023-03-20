@@ -11,8 +11,7 @@ Formato padrão para comandos não-abreviados no CLI: ` docker <comando> <subcom
 
  O conteúdo faz referência à [documentação](https://docs.docker.com/engine/reference/commandline/docker/) oficial do Docker.
 
-<details>
-<summary><strong>Listando imagens</strong></summary>
+<details><summary><strong>Listando imagens</strong></summary>
 
 ➡️ Utilize o comando `docker images` para visualizar todas as imagens Docker que já estão presentes em sua máquina.
 
@@ -24,8 +23,7 @@ OBS: Ao tentar executar um container com uma imagem específica e esta imagem n�
 
 </details>
 
-<details>
-<summary><strong>Listando containers</strong></summary>
+<details><summary><strong>Listando containers</strong></summary>
 
 ➡️ Utilize o comando `docker ps` ou o comando mais novo, o `docker container ls`, para listar todos os containers em execução neste momento em sua máquina.
 
@@ -47,10 +45,15 @@ OBS: Por padrão, o comando `docker ps` não exibe containers que foram parados 
  docker container ls -a
   ```
 
+➡️  O comando `docker container ps -l` lista o ultimo container criado.
+
+```bash
+docker container ps -l
+```
+
 </details>
 
-<details>
-<summary><strong>Executando um novo container</strong></summary>
+<details><summary><strong>Executando um novo container</strong></summary>
 
 ➡️ Utilize o comando `docker container run <flags>? <imagem>:<tag> <argumentos>?` para executar um container utilizando a imagem identificada pelo `<imagem>:<tag>`.
 
@@ -87,8 +90,7 @@ CONTAINER ID   IMAGE         COMMAND                 CREATED          STATUS    
 
 </details>
 
-<details>
-<summary><strong>⚠️ Atenção: Docker atribui um nome aleatório para o nosso container.</strong></summary>
+<details><summary><strong>⚠️ Atenção: Docker atribui um nome aleatório para o nosso container.</strong></summary>
 
  O Docker segue a seguinte regra para dar um nome a um novo container: `<adjetivo>_<nome>`.
 
@@ -104,10 +106,11 @@ OBS: se existir um container anterior com um nome diferente, o container não se
 
 </details>
 
-<details>
-<summary><strong>Removendo containers</strong></summary>
+<details><summary><strong>Removendo containers</strong></summary>
 
 Você pode remover containers usando o comando `docker rm <nome-do-container>`.
+
+O comando `docker rm -f <nome-do-container>`, com o parametro `-f`, força a remoção de um container, caso ele esteja ativo.
 
 Exemplo:
 

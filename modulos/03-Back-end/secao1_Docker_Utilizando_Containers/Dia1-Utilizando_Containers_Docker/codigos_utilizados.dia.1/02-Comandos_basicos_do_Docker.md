@@ -110,8 +110,6 @@ OBS: se existir um container anterior com um nome diferente, o container não se
 
 Você pode remover containers usando o comando `docker rm <nome-do-container>`.
 
-O comando `docker rm -f <nome-do-container>`, com o parametro `-f`, força a remoção de um container, caso ele esteja ativo.
-
 Exemplo:
 
 ```bash
@@ -119,6 +117,14 @@ docker rm meu-container
 ```
 
 ⚠️  um container só pode ser removido com o comando `docker rm <nome-do-container>` se ele estiver parado ou tiver sua execução terminada.
+
+O comando `docker rm -f <nome-do-container>`, com o parâmetro `-f`, força a remoção de um container, caso ele esteja ativo.
+
+Exemplo:
+
+```bash
+docker rm -f meu-container
+```
 
 </details>
 

@@ -58,23 +58,23 @@ Rode o comando cat /etc/debian_version que deve retornar a versão atual do sist
 root@c55f8dc86449:/# cat /etc/debian_version 
 ```
 
-🚀 Exercício 11
+🚀 Exercício 11 ✅
 Encerre o terminal.
 ```bash
 exit
 ```
 
-🚀 Exercício 12
+🚀 Exercício 12 ✅
 Remova somente o container criado para esse exercício.
 ```bash
 docker container rm c55f8dc86449
 ```
 
-Exercício 13
+Exercício 13 ✅
 [BÔNUS] Crie e rode de modo interativo em modo ‘Cleanup’, a imagem andrius/ascii-patrol.
 ```bash
 docker run -it --rm andrius/ascii-patrol
 ```
 
-Exercício 14
+Exercício 14 ✅
 [BÔNUS] Encerre o container utilizando os botões [ctrl] + [c].

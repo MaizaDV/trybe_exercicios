@@ -1,6 +1,6 @@
 # Seção 2: Introdução à SQL 🐬
 
-Esse seção pertence ao módulo de `Back-end` do curso da [Trybe](https://www.betrybe.com/).
+Essa seção pertence ao módulo de `Back-end` do curso da [Trybe](https://www.betrybe.com/).
 
 Nesta seção entendi como o `SQL` pode ser usado dentro de um banco de dados para criar, extrair, manipular e transformar dados em conteúdo útil, o que pode mudar o mundo!
 

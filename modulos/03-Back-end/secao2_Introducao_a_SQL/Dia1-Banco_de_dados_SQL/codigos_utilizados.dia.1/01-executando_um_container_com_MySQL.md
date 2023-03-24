@@ -14,7 +14,10 @@ Acessar o mysql dentro do container:
 ```bash
 mysql -u root -p
 ```
-O usuário root, é o padrão da imagem do MySQL, após acessar o container mysql usar a mesma senha usada na criação do container:  MYSQL_ROOT_PASSWORD=senha-mysql
+O usuário root, é o padrão da imagem do MySQL, após acessar o container mysql usar a mesma senha usada na criação do container:  `MYSQL_ROOT_PASSWORD=senha-mysql`
+```bash
+senha-mysql
+```
 
 Ver todos os bancos de dados que estão instalados atualmente, usar ponto e vírgula ao final de comandos no SQL:
 ```SQL

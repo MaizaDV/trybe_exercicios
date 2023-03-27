@@ -1,8 +1,10 @@
 # Dia 02: Encontrando dados em um banco de dados 🗂 🗄
 
-Neste dia comecei a juntar as peças da minha jornada! Elas me levarão a aprender a manipular e a transformar dados em informação, e informação em conhecimento!
+Neste dia comecei a juntar as peças da minha jornada! Elas me levaram a aprender a manipular e a transformar dados em informação, e informação em conhecimento!
 
-Aprendi que é importante ter uma base sólida do SQL para entregar resultados bem específicos e fazer pesquisas em situações em que não exista uma ferramenta gráfica.
+Aprendi o que é, e como fazer `querys` no SQL e vários comandos que ajudam na hora de encontrar dados.
+
+Com isso compreendi que é importante ter uma base sólida do SQL para entregar resultados bem específicos e fazer pesquisas em situações que não exista uma ferramenta gráfica.
 
 ## - Com isso me tornei capaz de 📝-
 

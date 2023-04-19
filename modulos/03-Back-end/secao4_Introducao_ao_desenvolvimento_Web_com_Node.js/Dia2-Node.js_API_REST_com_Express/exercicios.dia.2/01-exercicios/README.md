@@ -102,3 +102,12 @@ O corpo da requisição deve receber o seguinte formato:
 
 ## 🚀 Exercício 9 ✅
 Crie um endpoint do tipo DELETE com a rota /movies/:id que possa deletar um filme do JSON.
+<h2>Exercício - bônus</h2>
+<details>
+
+### 🚀 Exercício 10 ✅
+Crie um endpoint do tipo GET com a rota /movies/search, que possa listar todos os filmes do JSON.
+
+A rota deve receber a informação por query e a chave deve-se chamar q. A chave vai trazer consigo valor de ‘gente’ por exemplo, e o filtro deve trazer apenas os filmes com esse termo, se não encontrar, traga um array vazio.
+
+</details>

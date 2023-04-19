@@ -22,6 +22,23 @@ const readFile = async () => {
   }
 };
 
+//──── Exercício 10 - bônus ──────────────────────────────────────────────────────────────
+//todo Por conta do endpoint(rota), ela precisa ficar acima
+app.get('/movies/search', async (req, res) => {
+  try {
+    const { q } = req.query;
+    const movies = await readFile();
+    if(q) {
+      // passa pra letra minúscula e filtra
+      const filteredMovies = movies.filter((element) => element.movie.toLowerCase().includes(q.toLowerCase()));
+      return res.status(200).json(filteredMovies);
+    }
+    return res.status(200).end();
+  } catch(e) {
+    return res.status(500).send({ message: e.message })
+  }
+});
+
 //──── Exercício 5 ───────────────────────────────────────────────────────────────────────
 app.get('/movies/:id', async (req, res) => {
   try {

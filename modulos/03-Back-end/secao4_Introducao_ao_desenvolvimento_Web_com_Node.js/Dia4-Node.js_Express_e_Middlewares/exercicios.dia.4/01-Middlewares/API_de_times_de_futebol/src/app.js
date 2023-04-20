@@ -10,6 +10,7 @@ const teams = [
 
 app.use(express.json());
 
+//──── middleware de validação ───────────────────────────────────────────────────────────
 const validateTeam = (req, res, next) => {
   const requiredProperties = ['nome', 'sigla'];
   if (requiredProperties.every((property) => property in req.body)) {
@@ -31,7 +32,6 @@ app.get('/teams/:id', (req, res) => {
   }
 });
 
-//──── middleware de validação ───────────────────────────────────────────────────────────
 app.post('/teams', validateTeam, (req, res) => {
   const team = { id: nextId, ...req.body };
   teams.push(team);

@@ -16,15 +16,11 @@ async function readMissionsData() {
 async function writeNewMissionData(newMission) {
   try {
     const oldMissions = await readMissionsData();
-    const allMissions = JSON.stringify([
-      ...oldMissions,
-      { 
-        id: Date.now(),
-        ...newMission,
-      },
-    ]);
+    const newMissionWithId = { id: Date.now(), ...newMission };
+    const allMissions = JSON.stringify([...oldMissions, newMissionWithId]);
 
     await fs.writeFile(path.resolve(__dirname, MISSION_DATA_PATH), allMissions);
+    return newMissionWithId;
   } catch (error) {
     console.error(`Erro na leitura do arquivo: ${error.message}`);
   }

@@ -72,6 +72,7 @@ app.delete('/teams/:id', (req, res) => {
 });
 
 // ──── Para fixar ────────────────────────────────────────────────────────────────────────
+// => Crie um endpoint do tipo GET com a rota /teams/:id.
 //? Endpoint do tipo GET com a rota /teams/:id.
 app.get('/teams/:id', (req, res) => {
   const team = teams.find(({ id }) => id === Number(req.params.id));

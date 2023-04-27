@@ -1,0 +1,15 @@
+{
+  "name": "04-criando_um_script_simples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Maiza Dantas",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "1.4.10"
+  }
+}

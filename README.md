@@ -163,10 +163,10 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Seção 4: Introdução ao desenvolvimento Web com Node.js
 
 - [x] Dia 01: _Node.js: Runtime Assíncrono_
-- [ ] 22-2: _Node.js: API REST com Espress_
+- [x] Dia 02: _Node.js: API REST com Express_
 - [ ] 22-3: _Node.js:Testes de integração_
 - [ ] 22-4: _Express: Middlewares_
-- [ ] 22-5: _Node.js: Espress e Mysql_
+- [ ] 22-5: _Node.js: Express e Mysql_
 - [ ] 22-6: _Atividades + [Projeto - Data Flights]()_
 
 ##### Seção 5:  Arquitetura de Software: Model, Service e Controller

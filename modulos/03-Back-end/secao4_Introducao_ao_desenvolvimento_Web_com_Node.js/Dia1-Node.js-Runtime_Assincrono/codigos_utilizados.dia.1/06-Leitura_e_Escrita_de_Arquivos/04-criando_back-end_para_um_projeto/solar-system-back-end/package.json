@@ -1,0 +1,15 @@
+{
+  "name": "solar-system-back-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "missions.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eslint-config-trybe-backend": "^2.1.0",
+    "readline-sync": "1.4.10"
+  }
+}

@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node src/server.js",
     "test": "mocha ./src/tests/integration --exit"
   },
   "keywords": [],

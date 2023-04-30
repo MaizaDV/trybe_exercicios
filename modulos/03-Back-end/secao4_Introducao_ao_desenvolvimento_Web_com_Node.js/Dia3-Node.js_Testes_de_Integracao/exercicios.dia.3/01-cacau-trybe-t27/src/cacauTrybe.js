@@ -1,8 +1,8 @@
 const fs = require('fs').promises;
 const { join } = require('path');
+const path = '/files/cacauTrybeFile.json';
 
 const readCacauTrybeFile = async () => {
-  const path = '/files/cacauTrybeFile.json';
   try {
     const contentFile = await fs.readFile(join(__dirname, path), 'utf-8');
     return JSON.parse(contentFile);
@@ -29,13 +29,34 @@ const getChocolatesByBrand = async (brandId) => {
 };
 
 const writeCacauTrybeFile = async (content) => {
-  const path = '/files/cacauTrybeFile.json';
   try {
-    await fs.writeFile(join(__dirname, path), JSON.stringify(content));
-  } catch (error) {
+    const completePath = join(__dirname, path);
+    await fs.writeFile(completePath, JSON.stringify(content));
+  } catch (e) {
+    console.error('Erro ao salvar o arquivo', e.message);
     return null;
   }
 }
+
+//──── exercício - 6 ─────────────────────────────────────────────────────────────────────
+const updateChocolate = async (id, update) => {
+  const cacauTrybe = await readCacauTrybeFile();
+  const chocolateToUpdate = cacauTrybe.chocolates.find(
+    (chocolate) => chocolate.id === id,
+  );
+
+  if (chocolateToUpdate) {
+    cacauTrybe.chocolates = cacauTrybe.chocolates.map((chocolate) => {
+        if (chocolate.id === id) return { ...chocolate, ...update };
+        return chocolate;
+      });
+  
+    await writeCacauTrybeFile(cacauTrybe);
+    return { ...chocolateToUpdate, ...update };
+  }
+
+  return false;
+};
 
 const createChocolate = async (name, brandId) => {
   const cacauTrybe = await readCacauTrybeFile();
@@ -46,6 +67,13 @@ const createChocolate = async (name, brandId) => {
   await writeCacauTrybeFile(cacauTrybe);
 
   return newChocolate;
+};
+
+//──── exercício - 4 ─────────────────────────────────────────────────────────────────────
+const findChocolateByName = async (query) => {
+  const cacauTrybe = await readCacauTrybeFile();
+  return cacauTrybe.chocolates
+    .filter((chocolate) => chocolate.name.toLowerCase().includes(query.toLowerCase()));
 };
 
 const deleteChocolate = async (id) => {
@@ -72,6 +100,8 @@ module.exports = {
   getChocolatesByBrand,
   readCacauTrybeFile,
   writeCacauTrybeFile,
+  updateChocolate,
   createChocolate,
+  findChocolateByName,
   deleteChocolate,
 };

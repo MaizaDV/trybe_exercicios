@@ -1,0 +1,1 @@
+{"brands":[{"id":1,"name":"Lindt & Sprungli"},{"id":2,"name":"Ferrero"},{"id":3,"name":"Ghirardelli"}],"chocolates":[{"id":2,"name":"White Coconut","brandId":1},{"id":3,"name":"Mon Chéri","brandId":2},{"id":4,"name":"Mounds","brandId":3},{"id":5,"name":"Mint Not So Intense","brandId":2},{"id":6,"name":"Mint Not So Intense","brandId":2}],"nextChocolateId":7}

@@ -9,6 +9,28 @@ const {
 const app = express();
 app.use(express.json());
 
+
+// ──── middleware para validação de id ───────────────────────────────────────────────────
+const validateMissionId = (req, res, next) => {
+  const { id } = req.params;
+  const idAsNumber = Number(id);
+  if (Number.isNaN(idAsNumber)) {
+    return res.status(400).send({ message: 'ID inválido! Precisa ser um número' })
+  }
+  return next();
+};
+
+// ──── middleware para validação de atributos ────────────────────────────────────────────
+const validateMissionData = (req, res, next) => {
+  const requiredProperties = ['name', 'year', 'country', 'destination'];
+  if(requiredProperties.every((property) => property in req.body)) {
+    return next();
+  }
+  return res.status(400)
+    .send({ message: 'A missão precisa receber os atributos name, year, country e destination' })
+};
+
+
 // ──── endpoints ──────────────────────────────────────────────────────────────────────────
 app.get('/missions', async (_req, res) => {
   const missions = await readMissionsData();
@@ -16,7 +38,7 @@ app.get('/missions', async (_req, res) => {
   return res.status(200).json({ missions });
 });
 
-app.post('/missions', async (req, res) => {
+app.post('/missions', validateMissionData, async (req, res) => {
   const newMission = req.body;
 
   const newMissionWithId = await writeNewMissionData(newMission);
@@ -24,7 +46,7 @@ app.post('/missions', async (req, res) => {
 });
 
 // ──── endpoint de atualização ───────────────────────────────────────────────────────────
-app.put('/missions/:id', async (req, res) => {
+app.put('/missions/:id', validateMissionId, validateMissionData, async (req, res) => {
   const { id } = req.params;
   const updatedMissionData = req.body;
 
@@ -33,7 +55,7 @@ app.put('/missions/:id', async (req, res) => {
 });
 
 // ──── endpoint para deletar uma missão ──────────────────────────────────────────────────
-app.delete('/missions/:id', async (req, res) => {
+app.delete('/missions/:id', validateMissionId, async (req, res) => {
   const { id } = req.params;
   await deleteMissionData(Number(id));
 

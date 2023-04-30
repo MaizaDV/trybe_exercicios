@@ -164,7 +164,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [x] Dia 01: _Node.js: Runtime Assíncrono_
 - [x] Dia 02: _Node.js: API REST com Express_
-- [ ] 22-3: _Node.js:Testes de integração_
+- [x] Dia 03: _Node.js:Testes de integração_
 - [ ] 22-4: _Express: Middlewares_
 - [ ] 22-5: _Node.js: Express e Mysql_
 - [ ] 22-6: _Atividades + [Projeto - Data Flights]()_

@@ -1,6 +1,9 @@
 const express = require('express');
+// Lidando com erros assíncronos
+require('express-async-errors'); // não precisa definir uma variável
 
 const app = express();
+const apiCredentials = require('./middlewares/apiCredentials');
 
 let nextId = 3;
 const teams = [
@@ -9,6 +12,7 @@ const teams = [
 ];
 
 app.use(express.json());
+app.use(apiCredentials); 
 
 //──── middleware de validação ───────────────────────────────────────────────────────────
 const validateTeam = (req, res, next) => {

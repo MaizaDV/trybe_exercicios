@@ -9,13 +9,12 @@ const {
 const app = express();
 app.use(express.json());
 
-
 // ──── middleware para validação de id ───────────────────────────────────────────────────
 const validateMissionId = (req, res, next) => {
   const { id } = req.params;
   const idAsNumber = Number(id);
   if (Number.isNaN(idAsNumber)) {
-    return res.status(400).send({ message: 'ID inválido! Precisa ser um número' })
+    return res.status(400).send({ message: 'ID inválido! Precisa ser um número' });
   }
   return next();
 };
@@ -23,13 +22,12 @@ const validateMissionId = (req, res, next) => {
 // ──── middleware para validação de atributos ────────────────────────────────────────────
 const validateMissionData = (req, res, next) => {
   const requiredProperties = ['name', 'year', 'country', 'destination'];
-  if(requiredProperties.every((property) => property in req.body)) {
+  if (requiredProperties.every((property) => property in req.body)) {
     return next();
   }
   return res.status(400)
-    .send({ message: 'A missão precisa receber os atributos name, year, country e destination' })
+    .send({ message: 'A missão precisa receber os atributos name, year, country e destination' });
 };
-
 
 // ──── endpoints ──────────────────────────────────────────────────────────────────────────
 app.get('/missions', async (_req, res) => {

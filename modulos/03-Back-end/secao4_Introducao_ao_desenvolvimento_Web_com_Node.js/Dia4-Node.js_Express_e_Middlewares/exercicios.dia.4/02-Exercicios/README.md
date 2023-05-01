@@ -1,4 +1,4 @@
-# Exercício 1
+# Exercício 1  ✅
 Uma startup de Ecoturismo te procurou para construir uma aplicação back-end que auxilie na criação e compartilhamento de locais ainda não registrados na natureza.
 
 - O objetivo é valorizar e promover a capacidade turística do Brasil e os principais requisitos da API que essa startup solicitou são:
@@ -21,11 +21,13 @@ Uma startup de Ecoturismo te procurou para construir uma aplicação back-end qu
 
 ## Agora, faça os exercícios abaixo:
 
-👉 1 - Crie um servidor `Node.js` utilizando o framework `Express` com a estrutura inicial do `app.js` e `server.js` e prepare o ambiente instalando a biblioteca `nodemon`.
+👉 1 - Crie um servidor `Node.js` utilizando o framework `Express` com a estrutura inicial do `app.js` e `server.js` e prepare o ambiente instalando a biblioteca `nodemon`. ✅
 
-👉 2 - Adicione um `middleware` criado pela comunidade que tem como função interpretar conteúdo `JSON`.
+👉 2 - Adicione um `middleware` criado pela comunidade que tem como função interpretar conteúdo `JSON`.  ✅
 
-👉 3 - Crie um endpoint `POST com a rota /activities` para adicionar novas atividades. Ela deve:
+👉 3 - Crie um endpoint `POST com a rota /activities` para adicionar novas atividades. ✅
+
+**Ela deve**:
 
 - Retornar o status `201` e uma mensagem de sucesso quando a atividade tiver sido inserida (formato json);
 
@@ -34,7 +36,9 @@ Uma startup de Ecoturismo te procurou para construir uma aplicação back-end qu
    { "message": "Atividade cadastrada com sucesso!" }
   ```
 
-👉 4 - Crie um middleware de validação para a chave name. Ela deve:
+👉 4 - Crie um middleware de validação para a chave name. ✅
+
+**Ela deve**:
 - Ser obrigatória;
 - Retornar o status `400` e uma mensagem em formato json;
 
@@ -50,7 +54,9 @@ Uma startup de Ecoturismo te procurou para construir uma aplicação back-end qu
   { "message": "O campo name deve ter pelo menos 4 caracteres" }
   ```
 
-👉 5 - Crie um `middleware` de validação para a `chave price`. Ela deve:
+👉 5 - Crie um `middleware` de validação para a `chave price`. ✅
+
+**Ela deve**:
 
 - Ser obrigatória;
 - Retornar o status `400` e uma mensagem em formato json;
@@ -67,7 +73,9 @@ Uma startup de Ecoturismo te procurou para construir uma aplicação back-end qu
   { "message": "O campo price deve ser um número maior ou igual a zero" }
   ```
 
-👉 6 - Crie um `middleware` de validação para a `chave description` que possui as `chaves createdAt`, `rating` e `difficulty`. Ela deve:
+👉 6 - Crie um `middleware` de validação para a `chave description` que possui as `chaves createdAt`, `rating` e `difficulty`. ✅
+
+**Ela deve**:
 
 - Ter todas as chaves obrigatórias;
 - Retornar o status `400` para todas e uma mensagem em formato json;
@@ -91,7 +99,9 @@ Uma startup de Ecoturismo te procurou para construir uma aplicação back-end qu
   { "message": "O campo difficulty é obrigatório" }
   ```
 
-👉 7 - Crie um `middleware` de validação para a `chave createdAt`. Ela deve:
+👉 7 - Crie um `middleware` de validação para a `chave createdAt`. ✅
+
+**Ela deve**:
 
 - Ter uma data válida no formato `dd/mm/aaaa`;
 - Retornar o status `400` e uma mensagem em formato json;
@@ -100,7 +110,9 @@ Uma startup de Ecoturismo te procurou para construir uma aplicação back-end qu
   ```json
   { "message": "O campo createdAt deve ter o formato \'dd/mm/aaaa\'" }
   ```
-👉 8 - Crie um `middleware` de validação para a `chave rating`. Ela deve:
+👉 8 - Crie um `middleware` de validação para a `chave rating`. ✅
+
+**Ela deve**:
 
 - Ter um número inteiro entre 1 e 5;
 - Retornar o status `400` e uma mensagem em formato json;
@@ -110,7 +122,9 @@ Uma startup de Ecoturismo te procurou para construir uma aplicação back-end qu
   { "message": "O campo rating deve ser um número inteiro entre 1 e 5" }
   ```
 
-👉 9 - Crie um `middleware` de validação para a `chave difficulty`. Ela deve:
+👉 9 - Crie um `middleware` de validação para a `chave difficulty`. ✅
+
+**Ela deve**:
 
 - Ter apenas 3 classificações: `“Fácil”`, `“Médio”` ou `“Difícil”`;
 - Retornar o status `400` e uma mensagem em formato json;
@@ -132,7 +146,9 @@ Parabéns! Seu cliente ficou muito satisfeito com o trabalho e solicitou mais al
 
 ## Agora, faça os exercícios abaixo:
 
-👉 1 - Crie um endpoint `POST` com a rota `/signup` para cadastrar pessoas usuárias. Ela deve:
+👉 1 - Crie um endpoint `POST` com a rota `/signup` para cadastrar pessoas usuárias.
+
+**Ela deve**:
 
 - Ter os campos email, password, firstName e phone obrigatoriamente;
 - Caso os campos não sejam preenchidos, retornar o status 401 - Unauthorized e uma mensagem (formato json);
@@ -149,7 +165,9 @@ Parabéns! Seu cliente ficou muito satisfeito com o trabalho e solicitou mais al
   { token: '<token-aleatorio>' }
   ```
 
-👉 2 - Crie um `middleware` de autenticação ao endpoint `POST` com a rota `/activities`. Ela deve:
+👉 2 - Crie um `middleware` de autenticação ao endpoint `POST` com a rota `/activities`.
+
+**Ela deve**:
 
 - Ser validada por meio do token que foi gerado ao realizar o signup;
 - Ser encontrada pelo header Authorization;

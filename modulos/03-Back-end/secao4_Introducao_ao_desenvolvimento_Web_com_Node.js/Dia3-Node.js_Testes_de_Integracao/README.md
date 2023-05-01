@@ -12,7 +12,6 @@ Neste dia aprendi sobre três ferramentas de testes com `Node.js` bastante popul
 ' />
 <img src='https://img.shields.io/badge/sinon.js-323330?style=for-the-badge&logo=sinon
 ' />
-<img src='' />
 
 -Com isso me tornei capaz de 📝-
 

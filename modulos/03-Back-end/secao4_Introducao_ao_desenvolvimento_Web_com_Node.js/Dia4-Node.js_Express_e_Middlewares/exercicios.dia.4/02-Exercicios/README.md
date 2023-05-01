@@ -134,7 +134,7 @@ Uma startup de Ecoturismo te procurou para construir uma aplicação back-end qu
   { "message": "O campo difficulty deve ser \'Fácil\', \'Médio\' ou \'Difícil\'" }
   ```
 
-# Exercício 2
+# Exercício 2 ✅
 Parabéns! Seu cliente ficou muito satisfeito com o trabalho e solicitou mais alguns requisitos para você implementar. Veja abaixo:
 
 - Cadastrar pessoas usuárias das atividades de ecoturismo com as seguintes informações:
@@ -146,7 +146,7 @@ Parabéns! Seu cliente ficou muito satisfeito com o trabalho e solicitou mais al
 
 ## Agora, faça os exercícios abaixo:
 
-👉 1 - Crie um endpoint `POST` com a rota `/signup` para cadastrar pessoas usuárias.
+👉 1 - Crie um endpoint `POST` com a rota `/signup` para cadastrar pessoas usuárias. ✅
 
 **Ela deve**:
 
@@ -165,7 +165,7 @@ Parabéns! Seu cliente ficou muito satisfeito com o trabalho e solicitou mais al
   { token: '<token-aleatorio>' }
   ```
 
-👉 2 - Crie um `middleware` de autenticação ao endpoint `POST` com a rota `/activities`.
+👉 2 - Crie um `middleware` de autenticação ao endpoint `POST` com a rota `/activities`. ✅
 
 **Ela deve**:
 

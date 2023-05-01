@@ -1,6 +1,8 @@
 {
   "dependencies": {
-    "express": "4.17.1"
+    "express": "4.17.1",
+    "express-async-errors": "3.1.1",
+    "morgan": "1.10.0"
   },
   "name": "api_de_times_de_futebol",
   "version": "1.0.0",

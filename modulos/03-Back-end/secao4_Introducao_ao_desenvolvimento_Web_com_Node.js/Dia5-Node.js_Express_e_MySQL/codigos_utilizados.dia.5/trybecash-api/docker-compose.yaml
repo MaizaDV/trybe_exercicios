@@ -32,3 +32,5 @@ services:
       MYSQL_DATABASE: trybecashdb
     ports:
       - "33060:3306"
+    volumes:
+      - ./trybecash_script.sql:/docker-entrypoint-initdb.d/trybecash_script.sql

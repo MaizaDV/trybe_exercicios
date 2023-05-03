@@ -4,7 +4,10 @@ services:
     image: mysql:8.0.29
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: trybestrelar
+      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD} # variável de ambiente do arquivo .env
+      MYSQL_DATABASE: ${MYSQL_DATABASE_NAME} # variável de ambiente do arquivo .env
     ports:
-      - "33060:3306"
+      # porta do localhost:porta do container
+      - ${MYSQL_PORT}:3306
+    env_file:
+      - .env # arquivo de variáveis de ambiente

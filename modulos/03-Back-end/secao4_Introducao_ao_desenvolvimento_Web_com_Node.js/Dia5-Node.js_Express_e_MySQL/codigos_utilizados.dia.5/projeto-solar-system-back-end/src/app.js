@@ -2,11 +2,13 @@ const express = require('express');
 require('express-async-errors');
 
 const {
-  readMissionsData,
-  writeNewMissionData,
+  // readMissionsData,
+  // writeNewMissionData,
   updateMissionsData,
   deleteMissionData,
 } = require('./utils/fsUtils');
+
+const { findAll, insert } = require('./db/missionsDb');
 
 const app = express();
 app.use(express.json());
@@ -33,7 +35,8 @@ const validateMissionData = (req, res, next) => {
 
 // ──── endpoints ──────────────────────────────────────────────────────────────────────────
 app.get('/missions', async (_req, res) => {
-  const missions = await readMissionsData();
+  // const missions = await readMissionsData();
+  const missions = await findAll();
 
   return res.status(200).json({ missions });
 });
@@ -41,7 +44,9 @@ app.get('/missions', async (_req, res) => {
 app.post('/missions', validateMissionData, async (req, res) => {
   const newMission = req.body;
 
-  const newMissionWithId = await writeNewMissionData(newMission);
+  // const newMissionWithId = await writeNewMissionData(newMission);
+  const newMissionWithId = await insert(newMission);
+  
   return res.status(201).json({ missions: newMissionWithId });
 });
 

@@ -1,0 +1,49 @@
+version: '3'
+services:
+  node:
+    # Faz o docker construir (build) de uma imagem personalizada
+    # baseada no arquivo Dockerfile
+    build: 
+      dockerfile: ./Dockerfile
+      context: .
+    # Nome do container para facilitar execução
+    container_name: trybecash_api
+    # Restarta a imagem caso algo a faça parar
+    restart: always
+    # Diretório padrão de execução
+    working_dir: /app
+    # Lista de volumes (diretórios) mapeados de fora para dentro do container
+    volumes:
+      # Monta o diretório atual, com todos os dados da aplicação, dentro do diretório /app
+      - ./:/app
+    ports:
+      # Expõe a porta padrão da aplicação: altere aqui caso use outra porta
+      # na notação porta_de_fora:porta_de_dentro
+      - 3000:3000
+    # Informa ao docker, para que o container node seja iniciado após o container database
+    depends_on:
+      - "database"
+
+  database:
+    image: mysql:8.0.29
+    restart: always
+    environment:
+      # O valor dessa variável deve ser o nome do serviço do docker-compose
+      # que roda o mysql, neste caso database e não mais localhost.
+      - MYSQL_HOST=database 
+      # A porta aqui é 3306 e não 33060 pois nesse caso estamos informando
+      # o valor de um container (node) para outro (database)
+      - MYSQL_PORT=3306
+      # Aqui é o valor do nome de usuário que por padrão é root.
+      - MYSQL_USER=root
+      # o valor desta variável de ambiente ser igual ao valor da variável MYSQL_ROOT_PASSWORD definida no serviço do mysql
+      - MYSQL_PASSWORD=my_secret_password 
+    # Pode usar o atributo env_file para especificar o caminho para 
+      # um arquivo que contém as variáveis de ambiente, nesse caso,
+      # o arquivo .env
+    env_file:
+      - .env     
+    ports:
+      - "33060:3306"
+    volumes:
+      - ./trybecash_script.sql:/docker-entrypoint-initdb.d/trybecash_script.sql

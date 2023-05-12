@@ -1,0 +1,17 @@
+{
+  "name": "execicios_bonus",
+  "version": "1.0.0",
+  "description": "1 - Crie um código que exiba o valor dos `n` primeiros elementos da `sequência de Fibonacci`.",
+  "main": "index.js",
+  "scripts": {
+    "fibonacci": "node fibonacci.js",
+    "doMath": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "1.4.10"
+  }
+}

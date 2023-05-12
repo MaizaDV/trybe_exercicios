@@ -166,7 +166,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] Dia 02: _Node.js: API REST com Express_
 - [x] Dia 03: _Node.js:Testes de integração_
 - [x] Dia 04: _Express: Middlewares_
-- [ ] 22-5: _Node.js: Express e Mysql_
+- [x] Dia 05: _Node.js: Express e Mysql_
 - [ ] 22-6: _Atividades + [Projeto - Data Flights]()_
 
 ##### Seção 5:  Arquitetura de Software: Model, Service e Controller

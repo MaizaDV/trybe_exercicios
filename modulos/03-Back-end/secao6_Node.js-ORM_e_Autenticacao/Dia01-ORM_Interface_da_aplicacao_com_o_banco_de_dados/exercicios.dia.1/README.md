@@ -2,7 +2,7 @@
 
 Neste exercício vamos criar uma API simples, onde será possível criar um livro ou listar todos os livros da base de dados. Vamos utilizar MySQL como banco de dados e Sequelize como nosso ORM.
 
-## 🚀 **Exercício 1**: Crie uma migration para criar uma tabela books com as seguintes colunas:
+## ✅ 🚀 **Exercício 1**: Crie uma migration para criar uma tabela books com as seguintes colunas:
 
 - **id**: deve ser do tipo `integer`, não pode ser `nula` e ser a chave primária da tabela com auto incremento;
 - **title**: deve ser do tipo `string` e não pode ser `nulo`;
@@ -15,7 +15,7 @@ Neste exercício vamos criar uma API simples, onde será possível criar um livr
 
   **Obs 2**: Execute o comando `npx sequelize db:migrate` e verifique se a tabela foi criada antes de continuar para os próximos exercícios.
 
-## 🚀 **Exercício 2**: Crie o model Book utilizando a API do Sequelize. O model deve conter os seguintes campos:
+## ✅ 🚀 **Exercício 2**: Crie o model Book utilizando a API do Sequelize. O model deve conter os seguintes campos:
 
 - **title**: deve ser do tipo `DataTypes.STRING`
 - **author**: deve ser do tipo `DataTypes.STRING`

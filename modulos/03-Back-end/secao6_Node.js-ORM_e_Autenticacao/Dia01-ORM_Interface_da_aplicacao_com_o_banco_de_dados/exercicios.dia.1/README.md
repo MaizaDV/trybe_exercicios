@@ -68,3 +68,21 @@ Nos próximos exercícios você vai desenvolver uma API utilizando as camadas de
 Faça um teste no Thunder Client para ver se o endpoint está funcional.
 
 Em caso de erro, os endpoints devem retornar `status code 500` com a mensagem: `‘Algo deu errado’`.
+
+
+# Exercícios - bônus ✅
+
+1 - Crie um seeder usando o `Sequelize-CLI`, populando a sua base com pelo menos um livro;
+
+2 - Crie um método `getByAuthor` em BooksService para buscar uma lista de livros por author;
+
+3 - Refatore o método `getAll` de forma que ser for enviado uma `query string author` ele seja capaz de pegar a lista usando o método `getByAuthor` de BooksService;
+
+4 - Refatore os métodos `getAll` e `getByAuthor` para que a lista de livros seja ordenada pelo título em ordem alfabética;
+
+5 - Crie uma migration para adicionar a `coluna publisher`(editora) na tabela Books. Modifique as camadas de serviço para que esse campo seja utilizado no cadastro e na edição;
+
+6 - Escreva testes `unitários` para o model;
+
+7 - Escreva testes `unitários` para o service criado, isolando a camada de models.
+

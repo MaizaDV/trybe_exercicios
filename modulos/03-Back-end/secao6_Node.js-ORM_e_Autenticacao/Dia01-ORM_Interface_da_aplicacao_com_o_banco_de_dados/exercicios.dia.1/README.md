@@ -57,7 +57,7 @@ Nos próximos exercícios você vai desenvolver uma API utilizando as camadas de
 
 **Exercício 14**: Vincule a rota `PUT /books/:id` para acessar seu controller.
 
-## 🚀 Removendo um livro
+## 🚀 Removendo um livro ✅
 
 **Exercício 15**: No service BooksService crie um `método remove` que recebe o id do livro a ser removido e remova o mesmo utilizando o model Book.
 

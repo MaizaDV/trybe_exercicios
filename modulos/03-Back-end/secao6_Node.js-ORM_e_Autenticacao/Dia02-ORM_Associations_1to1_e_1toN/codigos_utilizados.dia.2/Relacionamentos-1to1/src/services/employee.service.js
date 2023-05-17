@@ -9,14 +9,20 @@ const getAll = async () => {
 };
 
 const getById = async (id) => {
+  // Eager Loading
+  // const employee = await Employee.findOne({
+  //     where: { id },
+  //     // include: [{ model: Address, as: 'addresses' }],
+  //     // o campo include pode manipular os dados que serão retornados. Por exemplo, se não quisermos o acesso ao número do endereço
+  //     include: [{
+  //       model: Address, as: 'addresses', attributes: { exclude: ['number'] }, // o campo number será excluído do retorno da requisição.
+  //     }],
+  //   });
+
+  // Lazy Loading
   const employee = await Employee.findOne({
-      where: { id },
-      // include: [{ model: Address, as: 'addresses' }],
-      // o campo include pode manipular os dados que serão retornados. Por exemplo, se não quisermos o acesso ao número do endereço
-      include: [{
-        model: Address, as: 'addresses', attributes: { exclude: ['number'] }, // o campo number será excluído do retorno da requisição.
-      }],
-    });
+    where: { id },
+  });
   return employee;
 }
 

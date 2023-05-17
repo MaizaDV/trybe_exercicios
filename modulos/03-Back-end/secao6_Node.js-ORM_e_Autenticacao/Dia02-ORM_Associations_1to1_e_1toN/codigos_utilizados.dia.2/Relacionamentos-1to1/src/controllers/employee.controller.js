@@ -1,5 +1,7 @@
 const EmployeeService = require('../services/employee.service');
 
+const AddressService = require('../services/address.service');
+
 const getAll = async (_req, res) => {
   try {
     const employees = await EmployeeService.getAll();
@@ -14,6 +16,11 @@ const getById = async (req, res) => {
   try {
     const { id } = req.params;
     const employee = await EmployeeService.getById(id);
+
+    if (req.query.includeAddresses === 'true') {
+      const addresses = await AddressService.getAllByEmployeeId(id);
+      return res.status(200).json({ employee, addresses });
+    }
 
     if (!employee) {
       return res.status(404).json({ message: 'Pessoa colaboradora não encontrada' });

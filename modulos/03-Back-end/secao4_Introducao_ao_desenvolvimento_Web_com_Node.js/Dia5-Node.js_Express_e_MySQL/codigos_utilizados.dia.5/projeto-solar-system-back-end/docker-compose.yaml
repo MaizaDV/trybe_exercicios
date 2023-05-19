@@ -1,0 +1,13 @@
+version: '3'
+services:
+  database:
+    image: mysql:8.0.29
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD} # variável de ambiente do arquivo .env
+      MYSQL_DATABASE: ${MYSQL_DATABASE_NAME} # variável de ambiente do arquivo .env
+    ports:
+      # porta do localhost:porta do container
+      - ${MYSQL_PORT}:3306
+    env_file:
+      - .env # arquivo de variáveis de ambiente

@@ -1,0 +1,13 @@
+{
+  "name": "01-testar_ja_faz_parte_da_sua_rotina",
+  "version": "1.0.0",
+  "description": "imagine que queremos criar uma função a qual receba a média das notas de uma pessoa e responda se ela foi aprovada ou não, seguindo.",
+  "main": "index.js",
+  "scripts": {
+    "start" : "node ./examples/testesDeCalculaSituacao.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

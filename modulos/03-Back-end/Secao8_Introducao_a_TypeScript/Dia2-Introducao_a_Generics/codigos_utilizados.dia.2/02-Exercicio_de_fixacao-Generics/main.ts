@@ -1,7 +1,9 @@
-function addProducts(products: string[], newProduct: string): string[] {
+// adiciona o <G> de variável genérica
+function addProducts<G>(products: G[], newProduct: G): G[] {
   return [...products, newProduct];
 }
 
+//──── Types ─────────────────────────────────────────────────────────────────────────────
 type Bread = {
   name: string,
   ingredients: string[],
@@ -14,9 +16,11 @@ type Flour = {
   gluten: boolean,
 };
 
+//──── Arrays ────────────────────────────────────────────────────────────────────────────
 const breads: Bread[] = [];
 const flours: Flour[] = [];
 
+//──── parâmetros passados para a função ─────────────────────────────────────────────────────
 const newBread: Bread = {
   name: "Pão de banana",
   ingredients: ['farinha de aveia sem glúten', 'bananas maduras', 'nozes', 'ovos', 'mel'],
@@ -29,8 +33,10 @@ const newFlour: Flour = {
   gluten: true,
 };
 
-const bread = addProducts(breads, newBread); // Error: Argument of type 'Bread[]' is not assignable to parameter of type 'string[]'.
-const flour = addProducts(flours, newFlour); // Error: Argument of type 'Flour[]' is not assignable to parameter of type 'string[]'.
+//──── função usando o generics ──────────────────────────────────────────────────────────
+const bread = addProducts<Bread>(breads, newBread); // Error: Argument of type 'Bread[]' is not assignable to parameter of type 'string[]'.
+const flour = addProducts<Flour>(flours, newFlour); // Error: Argument of type 'Flour[]' is not assignable to parameter of type 'string[]'.
 
+//──── logs do retorno da função ─────────────────────────────────────────────────────────
 console.log('bread', bread);
 console.log('flour', flour);

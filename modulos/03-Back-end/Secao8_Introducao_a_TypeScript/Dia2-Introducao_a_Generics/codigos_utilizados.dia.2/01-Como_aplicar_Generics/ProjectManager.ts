@@ -12,14 +12,14 @@ const projects: Project[] = [
   },
 ];
 
-function addTask(projectName: string, task: Task) {
+function addTask<T>(projectName: string, task: Task<T>) {
   const specificProject = projects.find((project) => project.name === projectName);
   if (specificProject) {
     specificProject.tasks.push(task);
   }
 }
 
-function getTasks(projectName: string): Task[] {
+function getTasks<T>(projectName: string): Task<T>[] {
   const specificProject = projects.find((project) => project.name === projectName);
   if (specificProject) {
     return specificProject.tasks;

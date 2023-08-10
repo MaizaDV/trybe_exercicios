@@ -1,4 +1,4 @@
-# Seção 1: Fundamentos de Java
+# Dia 1: Introdução ao Desenvolvimento em Java e Ferramentas Essenciais
 Neste dia, aprendi sobre Java e a sua história.
 
 -Me tornei capaz de 📝-

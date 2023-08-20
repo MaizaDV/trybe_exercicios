@@ -46,6 +46,7 @@ public class EstruturaDeRepeticaoWhile {
       vagaAtual += 1;
       System.out.println(log);
     }
+    System.out.println(">------------------------<");
   }
 
   /**
@@ -61,6 +62,7 @@ public class EstruturaDeRepeticaoWhile {
       primeirosInscritos++;
     }
     imprimeMensagem(numeroInscritos + " pessoas se inscreveram!");
+    System.out.println(">------------------------<");
   }
 
   static void imprimeMensagem(String mensagem) {

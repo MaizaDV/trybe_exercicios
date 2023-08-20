@@ -17,7 +17,7 @@ public class EstruturasCondicionais {
     } else {
       imprimeMensagem("POXA, NÃO FOI DESSA VEZ, MAS CONTINUE TENTANDO, ATÉ A PRÓXIMA");
     }
-
+    System.out.println(">------------------------<");
     double mediaFinal = 6.0;
     String resultado2 = "INDEFINIDO";
 

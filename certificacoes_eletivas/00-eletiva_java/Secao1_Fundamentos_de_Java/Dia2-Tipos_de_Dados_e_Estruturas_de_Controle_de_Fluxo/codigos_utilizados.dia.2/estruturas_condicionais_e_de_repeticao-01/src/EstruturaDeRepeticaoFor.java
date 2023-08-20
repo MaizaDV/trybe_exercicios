@@ -25,6 +25,7 @@ public class EstruturaDeRepeticaoFor {
       log = "O Número atual é: " + numero + "\n";
       System.out.println(log);
     }
+    System.out.println(">------------------------<");
   }
 
   /**
@@ -40,6 +41,7 @@ public class EstruturaDeRepeticaoFor {
     for (String aluno : alunos) {
       System.out.println(aluno);
     }
+    System.out.println(">------------------------<");
     // Pega o total de alunos existentes no vetor
     int totalAlunos = alunos.length;
 
@@ -55,5 +57,6 @@ public class EstruturaDeRepeticaoFor {
       log = "Matricula: " + matricula + " Aluno: " + alunos[posicao] + "\n";
       System.out.println(log);
     }
+    System.out.println(">------------------------<");
   }
 }

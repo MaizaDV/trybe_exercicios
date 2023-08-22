@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Secao1_Fundamentos_de_Java.iml" filepath="$PROJECT_DIR$/.idea/Secao1_Fundamentos_de_Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dia1-Introducao_ao_Java_e_Ferramentas_Essenciais/codigos_utilizados.dia.1/codigos_utilizados.dia.1.iml" filepath="$PROJECT_DIR$/Dia1-Introducao_ao_Java_e_Ferramentas_Essenciais/codigos_utilizados.dia.1/codigos_utilizados.dia.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dia1-Introducao_ao_Java_e_Ferramentas_Essenciais/exercicios.dia.1/exercicios.dia.1.iml" filepath="$PROJECT_DIR$/Dia1-Introducao_ao_Java_e_Ferramentas_Essenciais/exercicios.dia.1/exercicios.dia.1.iml" />
+    </modules>
+  </component>
+</project>

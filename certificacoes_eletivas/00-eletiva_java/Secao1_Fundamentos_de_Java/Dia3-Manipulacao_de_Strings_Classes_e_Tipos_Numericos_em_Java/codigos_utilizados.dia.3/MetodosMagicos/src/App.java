@@ -4,7 +4,7 @@
 public class App {
 
   /**
-   * Método main
+   * Método main.
    */
   public static void main(String[] args) {
     /*
@@ -15,7 +15,10 @@ public class App {
       4. Qual é o assunto do e-mail
       5. A mensagem
      */
-    String info = "notreply@mycompany.com;onetaxi@company.com;a;De {de} para {para}; Bom dia amigo!";
+    // caso não use vogal depois do segundo ";", a cópia oculta não é exibida na mensagem.
+    String info;
+    // info = "notreply@mycompany.com;onetaxi@company.com;b;De {de} para {para}; Bom dia amigo!";
+    info = "notreply@mycompany.com;onetaxi@company.com;a;De {de} para {para}; Bom dia amigo!";
     Email email = new Email();
     email.enviar(info);
   }

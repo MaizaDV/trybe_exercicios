@@ -1,4 +1,4 @@
-package sobreescritaPolimorfismo;
+package polimorfismo.sobreescrita;
 
 public class Moto extends Veiculo {
 

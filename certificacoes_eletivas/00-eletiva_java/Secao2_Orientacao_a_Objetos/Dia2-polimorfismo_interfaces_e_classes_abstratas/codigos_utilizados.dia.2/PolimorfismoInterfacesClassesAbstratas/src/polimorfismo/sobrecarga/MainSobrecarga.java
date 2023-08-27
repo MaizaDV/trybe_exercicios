@@ -1,4 +1,4 @@
-package sobrecargaPolimorfismo;
+package polimorfismo.sobrecarga;
 
 /**
  * Overload (sobrecarregar) permite que métodos diferentes tenham o mesmo nome em nossas classes,

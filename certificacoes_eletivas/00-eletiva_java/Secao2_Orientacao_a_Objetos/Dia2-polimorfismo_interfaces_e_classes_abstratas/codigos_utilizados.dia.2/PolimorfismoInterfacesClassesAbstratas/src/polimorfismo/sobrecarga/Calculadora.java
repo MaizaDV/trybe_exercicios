@@ -1,4 +1,4 @@
-package sobrecargaPolimorfismo;
+package polimorfismo.sobrecarga;
 
 /**
  * Temos a classe Calculadora com três métodos com o mesmo nome, porém com assinaturas diferentes.

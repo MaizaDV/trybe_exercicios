@@ -1,4 +1,4 @@
-package sobreescritaPolimorfismo;
+package polimorfismo.sobreescrita;
 
 /**
  * O conceito de Override (sobrescrever) está ligado diretamente ao conceito de herança no Java. O

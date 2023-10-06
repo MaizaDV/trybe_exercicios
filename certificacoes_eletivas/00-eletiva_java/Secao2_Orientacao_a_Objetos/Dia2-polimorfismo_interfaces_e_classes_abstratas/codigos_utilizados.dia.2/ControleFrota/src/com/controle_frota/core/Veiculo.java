@@ -2,14 +2,14 @@ package com.controle_frota.core;
 
 import java.util.ArrayList;
 
-public abstract class veiculo {
+public abstract class Veiculo {
 
   private String placa;
   private int anoFabricacao;
   private String combustivel;
   protected ArrayList<String> abastecimentos;
 
-  public veiculo(String placa, int anoFabricacao) {
+  public Veiculo(String placa, int anoFabricacao) {
     this.placa = placa;
     this.anoFabricacao = anoFabricacao;
     this.abastecimentos = new ArrayList<String>();

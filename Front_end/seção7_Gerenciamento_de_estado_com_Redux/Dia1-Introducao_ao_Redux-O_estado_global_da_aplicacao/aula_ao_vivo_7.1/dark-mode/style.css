@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root,
+html,
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.dark {
+  background-color: #212121;
+  color: #fff;
+}
+
+.light {
+  background-color: #fff;
+  color: #212121;
+}
+
+img {
+  width: 128px;
+  height: auto;
+}
+
+input {
+  width: 128px;
+  height: auto;
+  margin: 2rem;
+}
+
+button {
+  border: none;
+  background: none repeat scroll 0 0 transparent;
+  cursor: pointer;
+}

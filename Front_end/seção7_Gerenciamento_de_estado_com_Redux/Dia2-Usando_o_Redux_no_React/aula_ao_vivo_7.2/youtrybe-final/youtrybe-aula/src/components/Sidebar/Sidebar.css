@@ -1,0 +1,34 @@
+.sidebar {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  grid-area: sidebar;
+  padding: 0 16px;
+}
+
+.sidebar h3 {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 0 8px;
+  color: #0f0f0f;
+
+}
+
+.sidebar li {
+  list-style: none;
+  margin: 8px;
+}
+
+.category-list {
+  margin-bottom: 36px;
+}
+
+.sidebar button {
+  background: none;
+  border: none;
+  color: #FFFFFF;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.sidebar button:hover {
+  text-decoration: underline;
+}

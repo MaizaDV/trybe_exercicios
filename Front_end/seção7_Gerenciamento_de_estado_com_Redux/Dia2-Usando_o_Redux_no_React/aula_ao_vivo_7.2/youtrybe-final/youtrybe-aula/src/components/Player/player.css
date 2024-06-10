@@ -1,0 +1,61 @@
+.player {
+  grid-area: player;
+  padding: 0 16px;
+  background-color: #0f0f0f;
+}
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.movie-details {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+h2 {
+  color: #FFFFFF;
+  font-size: 24px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.movie-details p {
+  color: #AAAAAA;
+  font-size: 12px;
+}
+
+.movie-details .category {
+  background-color: #FFFFFF;
+  color: #0f0f0f;
+  padding: 4px;
+  display: inline-block;
+  border-radius: 3px;
+  margin-top: 16px;
+}
+
+.movie-options button {
+  background: none;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.movie-options button:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,6 @@
+{
+  "extends": "trybe-frontend",
+  "rules": {
+    "react/prop-types": "off"
+  }
+}

@@ -1,0 +1,29 @@
+body {
+  background-color: rgb(10, 15, 10);
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: rgba(211, 211, 211, 0.212);
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+button {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(0, 180, 0);
+}
+
+button:hover {
+  background-color: rgb(0, 97, 0);
+}
